@@ -37,11 +37,11 @@ function App() {
           <section id="successStories">
             <SuccessStories />
           </section>
-          <section id="faq">
-            <Faq />
-          </section>
           <section id="testimonials">
             <Testimonials />
+          </section>
+          <section id="faq">
+            <Faq />
           </section>
           <footer id="contact">
             <Footer />
