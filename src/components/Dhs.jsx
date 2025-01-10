@@ -179,7 +179,7 @@ const Dhs = () => {
   };
 
   return (
-    <div>
+    <div className="font-poppins">
       <div className="lg:flex hidden flex-col mx-24 gap-6 items-center lg:items-start lg:justify-start mt-32 min-h-[60vh] font-poppins">
         <div className="flex flex-row items-center justify-start gap-2 mx-24">
           <div>
@@ -408,7 +408,7 @@ const Dhs = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:hidden flex-col justify-center gap-6 items-center mt-32 min-h-[60vh] font-poppins mb-96">
+      <div className="flex lg:hidden flex-col justify-center gap-6 items-center mt-32 min-h-[60vh] font-poppins mb-[48rem]">
         <div className="flex flex-col items-center justify-center gap-2 px-2">
           <div>
             <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
@@ -639,101 +639,7 @@ const Dhs = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex flex-row items-start mt-24 justify-center gap-16 min-h-[40vh] relative">
-        <div className="flex flex-col relative gap-6 w-1/3 bg-[#051B2E] px-10 pt-10 pb-2 rounded-r-3xl text-white h-[33.5vh] shadow-3xl overflow-hidden group">
-          <span className="text-3xl  font-semibold text-wrap text-[#ffffff]">
-            {" "}
-            Remote Dynamic Healing Session
-          </span>
-          <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
-            <img
-              src={rhsBg}
-              alt="Example"
-              className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
-            />
-          </div>
-          <div className="bg-[#62626272] w-full h-[1px] z-20"></div>
-          <span className="text-lg">
-            Dynamic Healing also offers remote healing sessions, ensuring
-            accessibility for those unable to visit in person. In these
-            sessions, patients are asked to provide a photograph, which is used
-            to assess their energy readings. Since energy transcends physical
-            boundaries, remote healing is just as effective as in-person
-            sessions.
-          </span>
-        </div>
-        <div className="w-1/3 h-full drop-shadow-3xl relative">
-          <img
-            src={youtubebg}
-            alt="Example"
-            className="w-full h-full rounded-3xl object-cover"
-          />
-        </div>
-        <div className="flex flex-col relative gap-6 w-1/3 bg-[#051B2E] p-10 rounded-l-3xl text-white h-[33.5vh] shadow-3xl overflow-hidden group">
-          <div className="flex absolute -top-12 -right-32 rotate-180 mix-blend-overlay ">
-            <img
-              src={rhsBg2}
-              alt="Example"
-              className="w-full h-full scale-[-.4] group-hover:rotate-180 transition-all duration-1000 ease-in-out"
-            />
-          </div>
-          <span className="text-lg">
-            Once the energy assessment is complete, personalized remedies and
-            medicines are prepared and couriered directly to the patient.
-            However, for optimal results, it is highly recommended to have at
-            least one in-person session to fully experience the transformative
-            power of Dynamic Healing.
-          </span>
-        </div>
-      </div>
-      <div className="flex lg:hidden flex-col items-center justify-start gap-0 min-h-[80vh]">
-        <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6  text-white h-full shadow-3xl overflow-hidden group mt-96 pb-12">
-          <span className="text-3xl font-semibold text-wrap text-[#ffffff] ">
-            {" "}
-            Remote Dynamic Healing Session
-          </span>
-          <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
-            <img
-              src={rhsBg}
-              alt="Example"
-              className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
-            />
-          </div>
-          <div className="bg-[#62626272] text-md w-full h-[1px] z-20 "></div>
-          <span>
-            Dynamic Healing also offers remote healing sessions, ensuring
-            accessibility for those unable to visit in person. In these
-            sessions, patients are asked to provide a photograph, which is used
-            to assess their energy readings. Since energy transcends physical
-            boundaries, remote healing is just as effective as in-person
-            sessions.
-          </span>
-        </div>
-        <div className="w-full h-full drop-shadow-3xl relative">
-          <img
-            src={youtubebg}
-            alt="Example"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6 text-white h-full shadow-3xl overflow-hidden group pb-12">
-          <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
-            <img
-              src={rhsBg2}
-              alt="Example"
-              className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
-            />
-          </div>
-          <span>
-            Once the energy assessment is complete, personalized remedies and
-            medicines are prepared and couriered directly to the patient.
-            However, for optimal results, it is highly recommended to have at
-            least one in-person session to fully experience the transformative
-            power of Dynamic Healing.
-          </span>
-        </div>
-      </div>
-      <div className="lg:flex hidden flex-row gap-12 items-start justify-start my-20 mx-48">
+      <div className="lg:flex hidden flex-row gap-12 items-start justify-start my-20 mb-56 mx-48">
         <div className="flex flex-col gap-8 items-start justify-center w-3/5">
           <span className="text-lg font-normal text-wrap text-[#051B2E] w-full">
             Dynamic healing is not just about treating an illness through
@@ -919,6 +825,100 @@ const Dhs = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="hidden lg:flex flex-row items-start mt-24 justify-center gap-16 min-h-[40vh] relative">
+        <div className="flex flex-col relative gap-6 w-1/3 bg-[#051B2E] px-10 pt-10 pb-2 rounded-r-3xl text-white h-[33.5vh] shadow-3xl overflow-hidden group">
+          <span className="text-3xl  font-semibold text-wrap text-[#ffffff]">
+            {" "}
+            Remote Dynamic Healing Session
+          </span>
+          <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
+            <img
+              src={rhsBg}
+              alt="Example"
+              className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
+            />
+          </div>
+          <div className="bg-[#62626272] w-full h-[1px] z-20"></div>
+          <span className="text-lg">
+            Dynamic Healing also offers remote healing sessions, ensuring
+            accessibility for those unable to visit in person. In these
+            sessions, patients are asked to provide a photograph, which is used
+            to assess their energy readings. Since energy transcends physical
+            boundaries, remote healing is just as effective as in-person
+            sessions.
+          </span>
+        </div>
+        <div className="w-1/3 h-full drop-shadow-3xl relative">
+          <img
+            src={youtubebg}
+            alt="Example"
+            className="w-full h-full rounded-3xl object-cover"
+          />
+        </div>
+        <div className="flex flex-col relative gap-6 w-1/3 bg-[#051B2E] p-10 rounded-l-3xl text-white h-[33.5vh] shadow-3xl overflow-hidden group">
+          <div className="flex absolute -top-12 -right-32 rotate-180 mix-blend-overlay ">
+            <img
+              src={rhsBg2}
+              alt="Example"
+              className="w-full h-full scale-[-.4] group-hover:rotate-180 transition-all duration-1000 ease-in-out"
+            />
+          </div>
+          <span className="text-lg">
+            Once the energy assessment is complete, personalized remedies and
+            medicines are prepared and couriered directly to the patient.
+            However, for optimal results, it is highly recommended to have at
+            least one in-person session to fully experience the transformative
+            power of Dynamic Healing.
+          </span>
+        </div>
+      </div>
+      <div className="flex lg:hidden flex-col items-center justify-start gap-0 min-h-[80vh] my-20">
+        <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6  text-white h-full shadow-3xl overflow-hidden group pb-12">
+          <span className="text-3xl font-semibold text-wrap text-[#ffffff] ">
+            {" "}
+            Remote Dynamic Healing Session
+          </span>
+          <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
+            <img
+              src={rhsBg}
+              alt="Example"
+              className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
+            />
+          </div>
+          <div className="bg-[#62626272] text-md w-full h-[1px] z-20 "></div>
+          <span>
+            Dynamic Healing also offers remote healing sessions, ensuring
+            accessibility for those unable to visit in person. In these
+            sessions, patients are asked to provide a photograph, which is used
+            to assess their energy readings. Since energy transcends physical
+            boundaries, remote healing is just as effective as in-person
+            sessions.
+          </span>
+        </div>
+        <div className="w-full h-full drop-shadow-3xl relative">
+          <img
+            src={youtubebg}
+            alt="Example"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6 text-white h-full shadow-3xl overflow-hidden group pb-12">
+          <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
+            <img
+              src={rhsBg2}
+              alt="Example"
+              className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
+            />
+          </div>
+          <span>
+            Once the energy assessment is complete, personalized remedies and
+            medicines are prepared and couriered directly to the patient.
+            However, for optimal results, it is highly recommended to have at
+            least one in-person session to fully experience the transformative
+            power of Dynamic Healing.
+          </span>
         </div>
       </div>
     </div>

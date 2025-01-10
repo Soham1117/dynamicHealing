@@ -10,7 +10,7 @@ const navItems = [
   { id: "dhs", label: "Dynamic Healing Session" },
   { id: "spinalManipulation", label: "Spinal Manipulation" },
   { id: "successStories", label: "Success Stories" },
-  { id: "faq", label: "FAQ" },
+  { id: "faq", label: "FAQs" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -23,6 +23,34 @@ const NavLinksVertical = ({ onItemClick }) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     if (onItemClick) onItemClick();
   };
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "-50% 0px",
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveItem(entry.target.id);
+        }
+      });
+    }, options);
+
+    // Observe all sections
+    navItems.forEach((item) => {
+      const element = document.getElementById(item.id);
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      navItems.forEach((item) => {
+        const element = document.getElementById(item.id);
+        if (element) observer.unobserve(element);
+      });
+    };
+  }, []);
 
   return (
     <div className="flex flex-col items-start w-full pt-6 gap-6  ">

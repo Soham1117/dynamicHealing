@@ -13,7 +13,7 @@ const NavLinks = () => {
     { id: "dhs", label: "Dynamic Healing Session" },
     { id: "spinalManipulation", label: "Spinal Manipulation" },
     { id: "successStories", label: "Success Stories" },
-    { id: "faq", label: "FAQ" },
+    { id: "faq", label: "FAQs" },
     { id: "contact", label: "Contact" },
   ];
 

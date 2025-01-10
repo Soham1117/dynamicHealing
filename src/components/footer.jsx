@@ -42,6 +42,15 @@ const Footer = () => {
       )
       .then(() => {
         alert("Email sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          age: "",
+          address: "",
+          mainSymptoms: "",
+          symptoms: [],
+        });
       })
       .catch((error) => {
         alert("Failed to send email.");
@@ -400,7 +409,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col text-wrap gap-4">
               <span className="text-lg font-semibold text-[#011954]">
-                Address Business
+                Address
               </span>
               <span className="text-md text-[#68747A] text-warp">
                 SF-18B, Lotus Aura, Sama-Savli Rd, Vadodara, Gujarat
