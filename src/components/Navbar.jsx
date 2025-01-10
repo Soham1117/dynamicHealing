@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import NavLinks from "./NavLinks";
-import logo from "../assets/logo_blue_2.png";
+import logo from "../assets/logo.png";
 
 // Shared navigation data
 const navItems = [
