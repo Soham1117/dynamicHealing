@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import NavLinks from "./NavLinks";
+import logo from "../assets/logo_blue_2.png";
 
 // Shared navigation data
 const navItems = [
@@ -86,11 +87,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-20">
-          <img
-            src="src/assets/logo_blue_2.png"
-            alt="DH logo"
-            className="h-16 drop-shadow-sm"
-          />
+          <img src={logo} alt="DH logo" className="h-16 drop-shadow-sm" />
 
           <div className="hidden md:block">
             <NavLinks />
@@ -117,11 +114,7 @@ const Navbar = () => {
           >
             <div className="p-6 flex flex-col items-end mt-4 gap-8">
               <div className="flex flex-row justify-between w-full items-center">
-                <img
-                  src="src/assets/logo_blue_2.png"
-                  alt="DH logo"
-                  className="h-12 drop-shadow-sm"
-                />
+                <img src={logo} alt="DH logo" className="h-12 drop-shadow-sm" />
                 <X size={35} onClick={() => setOpen(false)} />
               </div>
               <div className="bg-[#c1dcff] w-full h-[1px]"></div>

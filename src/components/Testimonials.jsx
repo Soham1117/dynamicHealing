@@ -1,5 +1,6 @@
 import React from "react";
 import { FaA, FaD, FaP, FaV } from "react-icons/fa6";
+import logo from "../assets/logo_sil.svg";
 
 const Testimonials = () => {
   return (
@@ -7,11 +8,7 @@ const Testimonials = () => {
       <div className="flex flex-col mx-4 lg:mx-24 gap-6 items-center lg:items-center lg:justify-evenly mt-20 min-h-[70vh] font-poppins">
         <div className="flex flex-col items-center justify-center gap-2 w-full">
           <div>
-            <img
-              src="src\assets\logo_sil.svg"
-              alt="Example"
-              className="w-10 h-10 rounded-full"
-            />
+            <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
             <span className="lg:text-lg text-md font-normal text-[#68747A]">

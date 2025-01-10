@@ -1,6 +1,8 @@
 import Section from "./section.jsx";
 import section1Img from "../assets/section1.png";
 import section2Img from "../assets/section2.jpeg";
+import logo from "../assets/logo_sil.svg";
+import graphic from "../assets/in14.webp";
 
 function Subsections() {
   const sectionInfo = [
@@ -25,28 +27,28 @@ function Subsections() {
     >
       <div className="lg:flex hidden absolute right-0">
         <img
-          src="src\assets\in14.webp"
+          src={graphic}
           alt="Example"
           className="w-full h-full rounded-3xl"
         />
       </div>
       <div className="flex lg:hidden absolute top-0 left-0">
         <img
-          src="src\assets\in14.webp"
+          src={graphic}
           alt="Example"
           className="w-full h-full rounded-3xl"
         />
       </div>
       <div className="lg:flex hidden absolute left-0 bottom-0 rotate-180 ">
         <img
-          src="src\assets\in14.webp"
+          src={graphic}
           alt="Example"
           className="w-full h-full rounded-3xl"
         />
       </div>
       <div className="flex lg:hidden absolute left-0 bottom-0 rotate-180 ">
         <img
-          src="src\assets\in14.webp"
+          src={graphic}
           alt="Example"
           className="w-full h-full rounded-3xl"
         />
@@ -54,11 +56,7 @@ function Subsections() {
       <div className="lg:flex hidden flex-col items-start justify-start w-full ml-24 mr-24 mt-24 gap-6">
         <div className="flex flex-row items-center justify-start gap-2 ">
           <div>
-            <img
-              src="src\assets\logo_sil.svg"
-              alt="Example"
-              className="w-10 h-10 rounded-full"
-            />
+            <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
             <span className="text-lg font-normal text-[#68747A]">
@@ -81,11 +79,7 @@ function Subsections() {
       <div className="flex lg:hidden flex-col items-center justify-center w-full gap-6 mt-20 px-2">
         <div className="flex flex-col items-center justify-center gap-2 ">
           <div>
-            <img
-              src="src\assets\logo_sil.svg"
-              alt="Example"
-              className="w-10 h-10 rounded-full"
-            />
+            <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
             <span className="text-md font-normal text-[#68747A]">

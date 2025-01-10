@@ -1,4 +1,21 @@
 import YoutubeBg from "./YoutubeBg";
+import women from "../assets/women.jpg";
+import men from "../assets/mens health.jpg";
+import chronic from "../assets/chronic2.jpg";
+import eye from "../assets/eye.jpg";
+import digestive from "../assets/disgestive.jpg";
+import neurological from "../assets/neurological.jpg";
+import musculoskeletal from "../assets/muskoskeletal.jpg";
+import cardiovascular from "../assets/cardiovascular.jpg";
+import pediatric from "../assets/pediatric.jpg";
+import preventative from "../assets/preventative.jpg";
+import cancer from "../assets/cancer.jpg";
+import respiratory from "../assets/resp2.jpg";
+import logo from "../assets/logo_sil.svg";
+import rhsBg from "../assets/1.png";
+import rhsBg2 from "../assets/2.png";
+import youtubebg from "../assets/youtubebg.jpg";
+
 import { useState, useRef } from "react";
 import {
   FaFemale,
@@ -19,88 +36,88 @@ import {
 const options = [
   {
     label: "Women’s Health",
-    image: "src/assets/women.jpg",
+    image: women,
     content:
       "Menstrual Irregularities, Menopause, Conception Difficulties, Pregnancy, Childbirth, Lactation Difficulties, Postpartum, Ovarian and Uterine Problems, PCOD/PCOS.",
     icon: FaFemale,
   },
   {
     label: "Men’s Health",
-    image: "src/assets/mens health.jpg",
+    image: men,
     content: "Prostate, Infertility, and Impotence.",
     icon: FaMale,
   },
   {
     label: "Chronic and Systemic Conditions",
-    image: "src/assets/chronic2.jpg",
+    image: chronic,
     content:
       "Chronic Fatigue, High Blood Pressure, Obesity, Kidney Stones, Chronic Kidney Disease (CKD).",
     icon: FaThermometerHalf,
   },
   {
     label: "Digestive and Gastrointestinal Health",
-    image: "src/assets/disgestive.jpg",
+    image: digestive,
     content:
       "Indigestion, Constipation, Irritable Bowel Syndrome, Stomach Ulcers, Gallstones, Diarrhea, Nausea, Vomiting.",
     icon: FaUtensils,
   },
   {
     label: "Diseases of Eyes",
-    image: "src/assets/eye.jpg",
+    image: eye,
     content:
       "We also have got wonderful results in vision problems, retina detachment, and other eye ailments. Certain cases where no hope was given have been cured by our treatment. Details are mentioned in our success stories.",
     icon: FaEye,
   },
   {
     label: "Respiratory and Allergic Conditions",
-    image: "src/assets/resp2.jpg",
+    image: respiratory,
     content: "Allergies, Asthma, Sinusitis, Bronchitis",
     icon: FaLungs,
   },
   {
     label: "Diseases of the Nervous System",
-    image: "src/assets/neurological.jpg",
+    image: neurological,
     content:
       "Insomnia, Anxiety, Depression, Dizziness, Stress, Nerve Paralysis, Neuralgia, Facial Paralysis/Bell’s Palsy, Headaches/Migraines.",
     icon: FaBrain,
   },
   {
     label: "Musculoskeletal and Pain Disorders",
-    image: "src/assets/muskoskeletal.jpg",
+    image: musculoskeletal,
     content:
       "Back Pain, Sciatica, Stiff Shoulders and Neck, Sprains/Strains, Painful Joints, Tennis Elbow, Carpal Tunnel Syndrome, Lumbago, Fibromyalgia, Rheumatism, Arthritis.",
     icon: FaDumbbell,
   },
   {
     label: "Cardiovascular Health",
-    image: "src/assets/cardiovascular.jpg",
+    image: cardiovascular,
     content: "Angina, High Blood Pressure.",
     icon: FaHeart,
   },
 
   {
     label: "Pediatric Health",
-    image: "src/assets/pediatric.jpg",
+    image: pediatric,
     content:
       "Asthma, Cough, Digestive Problems, Behavioural Problems, Ear Infections, Sleep Problems.",
     icon: FaBaby,
   },
   {
     label: "Preventative and Supportive Care",
-    image: "src/assets/preventative.jpg",
+    image: preventative,
     content:
       "Stress Management, Wellness and Prevention, Post-Operative Recovery, Palliative Care.",
     icon: FaHandsHelping,
   },
   {
     label: "Addictions and Weight Management",
-    image: "src/assets/addiction 2.jpg",
+    image: preventative,
     content: "Tobacco, Narcotics, Alcohol, Weight Loss.",
     icon: FaBalanceScale,
   },
   {
     label: "Cancer and Other Terminal Diseases",
-    image: "src/assets/cancer.jpg",
+    image: cancer,
     content:
       "Support with Dynamic Healing sessions to reduce side effects of chemical treatments, aid in recovery from ongoing ailments.",
     icon: FaRibbon,
@@ -166,11 +183,7 @@ const Dhs = () => {
       <div className="lg:flex hidden flex-col mx-24 gap-6 items-center lg:items-start lg:justify-start mt-32 min-h-[60vh] font-poppins">
         <div className="flex flex-row items-center justify-start gap-2 mx-24">
           <div>
-            <img
-              src="src\assets\logo_sil.svg"
-              alt="Example"
-              className="w-10 h-10 rounded-full"
-            />
+            <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
             <span className="text-lg font-normal text-[#68747A]">
@@ -195,7 +208,7 @@ const Dhs = () => {
                 ${isClicked ? "opacity-50" : ""}`}
               >
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -207,7 +220,7 @@ const Dhs = () => {
               ${!isClicked ? "opacity-50" : ""}`}
               >
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -398,11 +411,7 @@ const Dhs = () => {
       <div className="flex lg:hidden flex-col justify-center gap-6 items-center mt-32 min-h-[60vh] font-poppins mb-96">
         <div className="flex flex-col items-center justify-center gap-2 px-2">
           <div>
-            <img
-              src="src\assets\logo_sil.svg"
-              alt="Example"
-              className="w-10 h-10 rounded-full"
-            />
+            <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
             <span className="text-md font-normal text-[#68747A]">
@@ -430,7 +439,7 @@ const Dhs = () => {
                 ${isClicked ? "opacity-50" : ""}`}
               >
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -442,7 +451,7 @@ const Dhs = () => {
               ${!isClicked ? "opacity-50" : ""}`}
               >
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -638,7 +647,7 @@ const Dhs = () => {
           </span>
           <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
             <img
-              src="src\assets\1.png"
+              src={rhsBg}
               alt="Example"
               className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
             />
@@ -655,7 +664,7 @@ const Dhs = () => {
         </div>
         <div className="w-1/3 h-full drop-shadow-3xl relative">
           <img
-            src="src\assets\youtubebg.jpg"
+            src={youtubebg}
             alt="Example"
             className="w-full h-full rounded-3xl object-cover"
           />
@@ -663,7 +672,7 @@ const Dhs = () => {
         <div className="flex flex-col relative gap-6 w-1/3 bg-[#051B2E] p-10 rounded-l-3xl text-white h-[33.5vh] shadow-3xl overflow-hidden group">
           <div className="flex absolute -top-12 -right-32 rotate-180 mix-blend-overlay ">
             <img
-              src="src\assets\2.png"
+              src={rhsBg2}
               alt="Example"
               className="w-full h-full scale-[-.4] group-hover:rotate-180 transition-all duration-1000 ease-in-out"
             />
@@ -685,7 +694,7 @@ const Dhs = () => {
           </span>
           <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
             <img
-              src="src\assets\1.png"
+              src={rhsBg}
               alt="Example"
               className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
             />
@@ -702,7 +711,7 @@ const Dhs = () => {
         </div>
         <div className="w-full h-full drop-shadow-3xl relative">
           <img
-            src="src\assets\youtubebg.jpg"
+            src={youtubebg}
             alt="Example"
             className="w-full h-full object-cover"
           />
@@ -710,7 +719,7 @@ const Dhs = () => {
         <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6 text-white h-full shadow-3xl overflow-hidden group pb-12">
           <div className="flex absolute -top-16 -right-32 rotate-180 mix-blend-overlay">
             <img
-              src="src\assets\2.png"
+              src={rhsBg2}
               alt="Example"
               className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
             />
@@ -732,6 +741,7 @@ const Dhs = () => {
             and working towards the permanent elimination of the illness from an
             individual&apos;s body.
           </span>
+
           <div
             ref={optionsRef}
             className="flex flex-col gap-6 items-start text-3xl text-[#b9c2c6] font-bold overflow-hidden"
@@ -739,6 +749,9 @@ const Dhs = () => {
               maxHeight: "400px",
               cursor: "grab",
               userSelect: "none",
+              overflowY: "auto",
+              scrollbarWidth: "none",
+              scrollBehavior: "smooth",
             }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}

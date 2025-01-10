@@ -1,5 +1,7 @@
 import { FaClinicMedical } from "react-icons/fa";
-
+import about from "../assets/about_1.jpg";
+import graphic from "../assets/h1-5.webp";
+import logo from "../assets/logo_sil.svg";
 const About = () => {
   function handleClick() {
     document.getElementById("dhs").scrollIntoView({ behavior: "smooth" });
@@ -11,7 +13,7 @@ const About = () => {
         <div className="block relative group">
           <div className="absolute top-0 z-20 w-[30rem] h-[36rem] drop-shadow-xl group-hover:-translate-y-2 group-hover:-translate-x-2 transition-all duration-300 ease-in-out ">
             <img
-              src="src\assets\about_1.jpg"
+              src={about}
               alt="Example"
               className="w-full h-full rounded-3xl"
             />
@@ -19,7 +21,7 @@ const About = () => {
 
           <div className="w-48 h-48 relative top-96 left-0 z-30 group-hover:-translate-y-2 group-hover:-translate-x-2 transition-all duration-300 ease-in-out ">
             <img
-              src="src\assets\h1-5.webp"
+              src={graphic}
               alt="Example"
               className="w-full h-full rounded-3xl"
             />
@@ -47,7 +49,7 @@ const About = () => {
           <div className="flex flex-col items-center justify-center gap-2">
             <div>
               <img
-                src="src\assets\logo_sil.svg"
+                src={logo}
                 alt="Example"
                 className="w-10 h-10 rounded-full"
               />
@@ -123,10 +125,7 @@ const About = () => {
       <div className="lg:hidden flex">
         <div className="flex items-start justify-center group">
           <div className="absolute flex w-[90%] aspect-[4/5] drop-shadow-xl group-hover:-translate-y-2 group-hover:-translate-x-2 transition-all duration-300 ease-in-out">
-            <img
-              src="src\assets\about_1.jpg"
-              className="w-full h-full rounded-3xl"
-            />
+            <img src={about} className="w-full h-full rounded-3xl" />
           </div>
           <div className="flex flex-col gap-2 w-40 aspect-[4/3] bg-[#09243c] rounded-3xl px-4 pt-6 pb-3 relative top-[14rem] left-14 z-30">
             <div className="flex flex-col gap-8">
@@ -149,7 +148,7 @@ const About = () => {
             <div className="flex flex-row ml-20 items-center justify-start gap-2">
               <div>
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />

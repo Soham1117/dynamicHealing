@@ -6,7 +6,7 @@ import Dropdown from "./dropDown";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-
+import graphic from "../assets/vr10.jpg";
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -58,7 +58,7 @@ const Footer = () => {
       <div className="hidden lg:flex flex-col border border-[#DADEE2] shadow-lg rounded-3xl lg:flex-row lg:flex-wrap gap-4 items-center lg:items-start lg:justify-evenly ml-4 mr-4 mt-12  min-h-[60vh]  font-poppins p-8 relative mb-8">
         <div className="absolute inset-0">
           <img
-            src="src/assets/vr10.jpg"
+            src={graphic}
             alt="Background"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -289,7 +289,7 @@ const Footer = () => {
       <div className="flex mx-6 lg:hidden flex-col border border-[#DADEE2] shadow-lg rounded-3xl lg:flex-row lg:flex-wrap gap-4 items-center lg:items-start lg:justify-evenly mt-12  min-h-[60vh] font-poppins p-4 relative mb-8">
         <div className="absolute inset-0">
           <img
-            src="src/assets/vr10.jpg"
+            src={graphic}
             alt="Background"
             className="w-full h-full object-cover rounded-3xl"
           />

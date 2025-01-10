@@ -1,4 +1,5 @@
 import Question from "./Question";
+import logo from "../assets/logo_sil.svg";
 
 const Faq = () => {
   const questions = [
@@ -39,7 +40,7 @@ const Faq = () => {
             <div className="flex flex-col items-center justify-center gap-2">
               <div>
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -69,7 +70,7 @@ const Faq = () => {
             <div className="flex flex-col items-center justify-center gap-2">
               <div>
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />

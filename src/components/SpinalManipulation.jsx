@@ -1,5 +1,9 @@
 import { FaBox, FaCogs, FaGift } from "react-icons/fa";
-
+import logo from "../assets/logo_sil.svg";
+import graphic from "../assets/bl10.webp";
+import graphic2 from "../assets/h1-12.webp";
+import smBg from "../assets/sm.jpg";
+import graphic3 from "../assets/h1-11.webp";
 const SpinalManipulation = () => {
   return (
     <div>
@@ -9,14 +13,14 @@ const SpinalManipulation = () => {
       >
         <div className="flex absolute top-0 left-0">
           <img
-            src="src\assets\bl10.webp"
+            src={graphic}
             alt="Example"
             className="w-full h-full opacity-50"
           />
         </div>
         <div className="flex absolute bottom-0 right-0">
           <img
-            src="src\assets\bl10.webp"
+            src={graphic}
             alt="Example"
             className="w-full h-full opacity-50"
           />
@@ -26,7 +30,7 @@ const SpinalManipulation = () => {
             <div className="flex flex-row items-center justify-start gap-2">
               <div>
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -54,7 +58,7 @@ const SpinalManipulation = () => {
           </div>
           <div className="z-10">
             <img
-              src="src\assets\sm.jpg"
+              src={smBg}
               alt="Example"
               className="w-[100%] h-[100%] rounded-3xl z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.10)] 
             hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
@@ -73,11 +77,7 @@ const SpinalManipulation = () => {
         <div className="flex flex-row w-full z-10 px-24 items-center justify-center gap-12">
           <div className="flex flex-col items-start justify-start relative gap-6 bg-[#ffcb53e2] h-[50vh] w-1/3 rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex absolute right-0 bottom-0">
-              <img
-                src="src\assets\h1-11.webp"
-                alt="Example"
-                className="w-full h-full"
-              />
+              <img src={graphic3} alt="Example" className="w-full h-full" />
             </div>
             <div className="flex flex-row items-center justify-between w-full gap-2">
               <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
@@ -117,11 +117,7 @@ const SpinalManipulation = () => {
           </div>
           <div className="flex flex-col items-start justify-start relative gap-6 bg-[#d7e9f3] h-[50vh] w-1/3 rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex absolute right-0 bottom-0">
-              <img
-                src="src\assets\h1-12.webp"
-                alt="Example"
-                className="w-full h-full"
-              />
+              <img src={graphic2} alt="Example" className="w-full h-full" />
             </div>
             <div className="flex flex-row items-center justify-between w-full gap-2">
               <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
@@ -237,14 +233,14 @@ const SpinalManipulation = () => {
       >
         <div className="flex absolute top-0 left-0">
           <img
-            src="src\assets\bl10.webp"
+            src={graphic}
             alt="Example"
             className="w-full h-full opacity-50"
           />
         </div>
         <div className="flex absolute bottom-0 right-0">
           <img
-            src="src\assets\bl10.webp"
+            src={graphic}
             alt="Example"
             className="w-full h-full opacity-50"
           />
@@ -254,7 +250,7 @@ const SpinalManipulation = () => {
             <div className="flex flex-col items-center justify-center gap-2">
               <div>
                 <img
-                  src="src\assets\logo_sil.svg"
+                  src={logo}
                   alt="Example"
                   className="w-10 h-10 rounded-full"
                 />
@@ -281,7 +277,7 @@ const SpinalManipulation = () => {
           </div>
           <div className="z-10">
             <img
-              src="src\assets\sm.jpg"
+              src={smBg}
               alt="Example"
               className="w-[100%] h-[100%] rounded-3xl z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.10)] 
       hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
@@ -300,11 +296,7 @@ const SpinalManipulation = () => {
         <div className="flex flex-col w-full z-10 items-start justify-center gap-12">
           <div className="flex flex-col items-start justify-start relative gap-6 bg-[#ffcb53e2] h-[26rem] w-full rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex absolute right-0 bottom-0">
-              <img
-                src="src\assets\h1-11.webp"
-                alt="Example"
-                className="w-full h-full"
-              />
+              <img src={graphic3} alt="Example" className="w-full h-full" />
             </div>
             <div className="flex flex-row items-center justify-between w-full gap-2">
               <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
@@ -344,11 +336,7 @@ const SpinalManipulation = () => {
           </div>
           <div className="flex flex-col items-start justify-start relative gap-6 bg-[#d7e9f3] h-[32rem] w-full rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex absolute right-0 bottom-0">
-              <img
-                src="src\assets\h1-12.webp"
-                alt="Example"
-                className="w-full h-full"
-              />
+              <img src={graphic2} alt="Example" className="w-full h-full" />
             </div>
             <div className="flex flex-row items-center justify-between w-full gap-2">
               <span className="text-3xl font-semibold text-wrap text-[#051B2E]">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
-
+import dhsyt from "../assets/dhs.png";
 const YoutubeBg = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +17,7 @@ const YoutubeBg = () => {
             shadow-[0px_8px_0px_rgba(0,0,0,0.20)]`}
           >
             <img
-              src="src\assets\dhs.png"
+              src={dhsyt}
               alt="Video thumbnail"
               className="w-full h-full object-cover"
             />
@@ -64,7 +64,7 @@ const YoutubeBg = () => {
           shadow-[0px_8px_0px_rgba(0,0,0,0.20)]`}
           >
             <img
-              src="src\assets\dhs.png"
+              src={dhsyt}
               alt="Video thumbnail"
               className="w-full h-full object-cover"
             />
