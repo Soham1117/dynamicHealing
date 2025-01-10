@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 
 const Question = ({ question }) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -61,13 +60,6 @@ const Question = ({ question }) => {
       </div>
     </div>
   );
-};
-
-Question.propTypes = {
-  question: PropTypes.shape({
-    question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default Question;

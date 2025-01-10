@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 const Section = ({ section }) => {
   function handleClick(id) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -46,13 +44,5 @@ const Section = ({ section }) => {
     </div>
   );
 };
-Section.propTypes = {
-  section: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    logo: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-  }).isRequired,
-};
+
 export default Section;
