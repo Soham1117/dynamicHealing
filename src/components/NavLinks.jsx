@@ -114,12 +114,12 @@ const NavLinks = () => {
         }}
       />
 
-      <div className="flex flex-row gap-5 items-center">
+      <div className="flex flex-row md:gap-2 lg:gap-2 items-center">
         {navItems.map((item, index) => (
           <div
             key={item.id}
             data-id={item.id}
-            className={`relative px-6 py-3 transition-colors duration-300 font-poppins font-medium cursor-pointer text-nowrap ${
+            className={`relative px-6 py-3 text-wrap transition-colors duration-300 font-poppins font-medium cursor-pointer ${
               activeItem === item.id
                 ? hoveredItem === index || hoveredItem === null
                   ? "text-[#f7fbff]"

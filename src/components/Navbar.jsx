@@ -3,7 +3,6 @@ import { Menu, X } from "lucide-react";
 import NavLinks from "./NavLinks";
 import logo from "../assets/logo.png";
 
-// Shared navigation data
 const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
@@ -14,7 +13,6 @@ const navItems = [
   { id: "contact", label: "Contact" },
 ];
 
-// eslint-disable-next-line react/prop-types
 const NavLinksVertical = ({ onItemClick }) => {
   const [activeItem, setActiveItem] = useState("home");
 
@@ -38,7 +36,6 @@ const NavLinksVertical = ({ onItemClick }) => {
       });
     }, options);
 
-    // Observe all sections
     navItems.forEach((item) => {
       const element = document.getElementById(item.id);
       if (element) observer.observe(element);
@@ -76,7 +73,6 @@ const NavLinksVertical = ({ onItemClick }) => {
   );
 };
 
-// Main Navbar Component
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isTop, setIsTop] = useState(true);
@@ -101,8 +97,8 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     };
   }, [open]);
+
   function openFunc() {
-    console.log(open);
     setOpen(!open);
   }
 
@@ -113,7 +109,7 @@ const Navbar = () => {
         ${!isTop ? "bg-white/80 shadow-lg backdrop-blur-xl" : "bg-transparent"}
          py-3 z-50 rounded-2xl border border-gray-100/20`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2">
         <div className="flex items-center justify-between gap-20">
           <img src={logo} alt="DH logo" className="h-16 drop-shadow-sm" />
 

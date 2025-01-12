@@ -59,10 +59,6 @@ const Calendar = () => {
     weekend.saturday.setDate(thirdFriday.getDate() + 1);
     weekend.sunday.setDate(thirdFriday.getDate() + 2);
 
-    console.log("Friday:", thirdFriday.getDate());
-    console.log("Saturday:", weekend.saturday.getDate());
-    console.log("Sunday:", weekend.sunday.getDate());
-
     for (let i = 0; i < firstDay; i++) {
       days.push(<div key={`empty-${i}`} className="text-gray-400"></div>);
     }
