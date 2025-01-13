@@ -417,7 +417,7 @@ const Dhs = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:hidden flex-col justify-center gap-6 items-center mt-32 min-h-[60vh] font-poppins mb-[48rem]">
+      <div className="flex lg:hidden flex-col justify-center gap-6 items-center mt-32 min-h-[60vh] font-poppins mb-[36rem]">
         <div className="flex flex-col items-center justify-center gap-2 px-2">
           <div>
             <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
@@ -889,7 +889,7 @@ const Dhs = () => {
         </div>
       </div>
 
-      <div className="flex lg:hidden flex-col items-center justify-start gap-0 min-h-[80vh] my-20">
+      <div className="flex lg:hidden flex-col items-center justify-start gap-0 min-h-[80vh] mb-20">
         <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6  text-white h-full shadow-3xl overflow-hidden group pb-12">
           <span className="text-3xl font-semibold text-wrap text-[#ffffff] ">
             {" "}
