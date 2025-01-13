@@ -106,7 +106,7 @@ const Story = ({ story }) => {
         </h2>
       </div>
       <div className="bg-[#dadee2] w-full h-[1px]"></div>
-      <p className="text-md text-[#68747A] ml-2">{story.text}</p>
+      <p className="text-base text-[#68747A] ml-2">{story.text}</p>
     </div>
   );
 };

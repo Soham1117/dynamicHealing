@@ -423,7 +423,7 @@ const Dhs = () => {
             <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
-            <span className="text-md font-normal text-[#68747A]">
+            <span className="text-base font-normal text-[#68747A]">
               Your Path to Better Health Begins Here
             </span>
           </div>
@@ -477,7 +477,7 @@ const Dhs = () => {
               <div className="flex flex-row gap-6 items-center justify-start px-2">
                 <div className="bg-[#ffcc53] w-1 h-28"></div>
                 <div className="w-full">
-                  <span className="text-md font-normal text-wrap text-[#051B2E]">
+                  <span className="text-base font-normal text-wrap text-[#051B2E]">
                     Staying healthy is almost as important as staying alive, as
                     life loses its charm without physical and mental health and
                     well-being.
@@ -486,7 +486,7 @@ const Dhs = () => {
               </div>
               <div className="bg-[#c1dcff] w-full h-[1px]"></div>
               <div className="flex flex-col gap-6 w-full">
-                <span className="text-md font-normal text-wrap text-[#68747A]">
+                <span className="text-base font-normal text-wrap text-[#68747A]">
                   Dynamic Healing Session is a combination of various
                   alternative therapies backed by a very solid scientific
                   foundation and covers different forms of treatment such as
@@ -599,7 +599,7 @@ const Dhs = () => {
                     </span>
                   </div>
                 </div>
-                <span className="text-md">
+                <span className="text-base">
                   This mode of treatment checks the global energy balance and
                   finds out the areas where the energies are blocked or
                   imbalanced and treats them accordingly to overcome the
@@ -618,7 +618,7 @@ const Dhs = () => {
               <div className="flex flex-row gap-6 items-center ">
                 <div className="bg-[#ffcc53] w-1 h-36"></div>
                 <div className="w-full">
-                  <span className="text-md font-normal text-wrap text-[#051B2E]">
+                  <span className="text-base font-normal text-wrap text-[#051B2E]">
                     In a world where we meticulously maintain our devices but
                     often neglect our own bodies, Dynamic Healing reminds us of
                     the importance of personal wellness maintenance.
@@ -626,7 +626,7 @@ const Dhs = () => {
                 </div>
               </div>
               <div className="bg-[#c1dcff] w-full h-[1px]"></div>
-              <div className="text-md flex flex-col gap-6 w-full">
+              <div className="text-base flex flex-col gap-6 w-full">
                 <span className="font-normal text-wrap text-[#68747A]">
                   In today’s environment, where pollution and stress are
                   unavoidable, our health faces constant challenges. When
@@ -902,7 +902,7 @@ const Dhs = () => {
               className="w-full h-full -scale-50 group-hover:rotate-180 transition-all duration-1000 ease-in-out"
             />
           </div>
-          <div className="bg-[#62626272] text-md w-full h-[1px] z-20 "></div>
+          <div className="bg-[#62626272] text-base w-full h-[1px] z-20 "></div>
           <span>
             Dynamic Healing also offers remote healing sessions, ensuring
             accessibility for those unable to visit in person. In these

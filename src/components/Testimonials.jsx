@@ -11,7 +11,7 @@ const Testimonials = () => {
             <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
-            <span className="lg:text-lg text-md font-normal text-[#68747A]">
+            <span className="lg:text-lg text-base font-normal text-[#68747A]">
               What people are saying?
             </span>
           </div>

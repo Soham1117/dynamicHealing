@@ -54,7 +54,7 @@ const About = () => {
               />
             </div>
             <div>
-              <span className="text-md font-normal text-[#68747A]">
+              <span className="text-base font-normal text-[#68747A]">
                 Welcome to Dynamic Healing
               </span>
             </div>
@@ -67,7 +67,7 @@ const About = () => {
           <div className="flex flex-row gap-6 items-center ">
             <div className="bg-[#ffcc53] w-3 h-24"></div>
             <div>
-              <span className="text-md font-normal text-wrap text-[#051B2E]">
+              <span className="text-base font-normal text-wrap text-[#051B2E]">
                 Staying healthy is almost as important as staying alive, as life
                 loses its charm without physical and mental health and
                 well-being.
@@ -75,7 +75,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <span className="text-md font-normal text-wrap text-[#68747A]">
+            <span className="text-base font-normal text-wrap text-[#68747A]">
               Dynamic Healing, developed by Dr. Divij Tanna, N.D., RMP, combines
               science with energy healing to restore balance and optimize
               health. By addressing energy imbalances, it promotes harmony in
@@ -83,7 +83,7 @@ const About = () => {
             </span>
           </div>
           <div>
-            <span className="text-md font-normal text-wrap text-[#68747A]">
+            <span className="text-base font-normal text-wrap text-[#68747A]">
               Tailored to your unique needs, each session clears blockages,
               activates healing, and supports lasting wellness, guiding you on a
               personalized journey to vibrant health and balance.
@@ -167,7 +167,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <span className="text-md font-normal text-wrap text-[#68747A]">
+          <span className="text-base font-normal text-wrap text-[#68747A]">
             Dynamic Healing, developed by Dr. Divij Tanna, N.D., RMP, combines
             science with energy healing to restore balance and optimize health.
             By addressing energy imbalances, it promotes harmony in the body and
@@ -175,7 +175,7 @@ const About = () => {
           </span>
         </div>
         <div className="">
-          <span className="text-md font-normal text-wrap text-[#68747A]">
+          <span className="text-base font-normal text-wrap text-[#68747A]">
             Tailored to your unique needs, each session clears blockages,
             activates healing, and supports lasting wellness, guiding you on a
             personalized journey to vibrant health and balance.

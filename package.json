@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Soham1117.github.io/DynamicHealing",
+  "homepage": "https://soham1117.github.io/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",

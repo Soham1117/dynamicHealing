@@ -72,7 +72,7 @@ function Subsections() {
           </span>
         </div>
         <div>
-          <span className="text-md font-normal text-wrap text-[#68747A] ">
+          <span className="text-base font-normal text-wrap text-[#68747A] ">
             Combining advanced healing methods to nurture, restore, and
             rejuvenate your body.
           </span>
@@ -84,7 +84,7 @@ function Subsections() {
             <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
           <div>
-            <span className="text-md font-normal text-[#68747A]">
+            <span className="text-base font-normal text-[#68747A]">
               We Provide the Best Service for your Health
             </span>
           </div>
@@ -95,7 +95,7 @@ function Subsections() {
           </span>
         </div>
         <div>
-          <span className="text-md font-normal text-wrap text-[#68747A] ">
+          <span className="text-base font-normal text-wrap text-[#68747A] ">
             Combining advanced healing methods to nurture, restore, and
             rejuvenate your body.
           </span>

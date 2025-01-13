@@ -93,7 +93,7 @@ const SpinalManipulation = () => {
             </div>
             <div className="bg-[#a973317f] w-full h-[1px]"></div>
             <div className="flex items-start justify-center w-full h-full">
-              <span className="text-md font-normal text-wrap text-[#051B2E] z-10">
+              <span className="text-base font-normal text-wrap text-[#051B2E] z-10">
                 The primary characteristic of spinal manipulation techniques is
                 achieving the popping or cracking sound in synovial joints. This
                 audible release is thought to result from the implosion of gas
@@ -112,7 +112,7 @@ const SpinalManipulation = () => {
             </div>
             <div className="bg-[#c1dcff] w-full h-[1px]"></div>
             <div className="flex items-start justify-center w-full h-full">
-              <span className="z-10 text-md font-normal text-wrap text-[#ffffff]">
+              <span className="z-10 text-base font-normal text-wrap text-[#ffffff]">
                 Treatment plans can be tailored to individual needs, with
                 multiple-session packages available for addressing chronic
                 conditions effectively.
@@ -139,7 +139,7 @@ const SpinalManipulation = () => {
                 Spinal manipulations can provide significant relief from back
                 pain by:
               </span>
-              <div className="z-10 flex flex-col items-start justify-start gap-2 text-[#051B2E] text-md h-[22vh]">
+              <div className="z-10 flex flex-col items-start justify-start gap-2 text-[#051B2E] text-base h-[22vh]">
                 <span className="flex flex-row gap-2 items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +261,7 @@ const SpinalManipulation = () => {
                 />
               </div>
               <div>
-                <span className="text-md font-normal text-[#051b2e]">
+                <span className="text-base font-normal text-[#051b2e]">
                   Your Health is Our Top Goal
                 </span>
               </div>
@@ -272,7 +272,7 @@ const SpinalManipulation = () => {
               </span>
             </div>
             <div className="w-full">
-              <span className="text-md font-normal text-wrap text-[#051B2E] ">
+              <span className="text-base font-normal text-wrap text-[#051B2E] ">
                 Spinal manipulation, a common chiropractic treatment, is a
                 passive technique where a therapist applies a targeted manual
                 impulse or thrust to a joint, typically near the end of its
@@ -290,7 +290,7 @@ const SpinalManipulation = () => {
           </div>
         </div>
         <div className="w-full z-10">
-          <span className="text-md font-normal text-wrap text-[#051B2E] ">
+          <span className="text-base font-normal text-wrap text-[#051B2E] ">
             This often results in an audible &quot;crack,&quot; which is widely
             attributed to the cavitation of spinal facet joints. Cavitation
             occurs when gas bubbles form in the joint due to lower-than-normal
@@ -313,7 +313,7 @@ const SpinalManipulation = () => {
             </div>
             <div className="bg-[#a973317f] w-full h-[1px]"></div>
             <div className="w-full h-[30vh]">
-              <span className="text-md font-normal text-wrap text-[#051B2E] z-10">
+              <span className="text-base font-normal text-wrap text-[#051B2E] z-10">
                 The primary characteristic of spinal manipulation techniques is
                 achieving the popping or cracking sound in synovial joints. This
                 audible release is thought to result from the implosion of gas
@@ -332,7 +332,7 @@ const SpinalManipulation = () => {
             </div>
             <div className="bg-[#c1dcff] w-full h-[1px]"></div>
             <div className="w-full h-[30vh]">
-              <span className="z-10 text-md font-normal text-wrap text-[#ffffff]">
+              <span className="z-10 text-base font-normal text-wrap text-[#ffffff]">
                 Treatment plans can be tailored to individual needs, with
                 multiple-session packages available for addressing chronic
                 conditions effectively.
@@ -352,13 +352,13 @@ const SpinalManipulation = () => {
               </div>
             </div>
             <div className="bg-[#a973317f] w-full h-[1px]"></div>
-            <div className="flex flex-col gap-4 text-md">
+            <div className="flex flex-col gap-4 text-base">
               <span>
                 {" "}
                 Spinal manipulations can provide significant relief from back
                 pain by:
               </span>
-              <div className="z-10 flex flex-col items-start justify-start gap-2 text-[#051B2E] text-md h-[22vh]">
+              <div className="z-10 flex flex-col items-start justify-start gap-2 text-[#051B2E] text-base h-[22vh]">
                 <span className="flex flex-row gap-2 items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

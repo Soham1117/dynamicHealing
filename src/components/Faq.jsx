@@ -76,7 +76,7 @@ const Faq = () => {
                 />
               </div>
               <div>
-                <span className="text-md font-normal text-[#68747A]">
+                <span className="text-base font-normal text-[#68747A]">
                   Your Path to Better Health Begins Here
                 </span>
               </div>

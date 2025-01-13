@@ -17,10 +17,10 @@ const Section = ({ section }) => {
       <h2 className="text-2xl font-medium text-[#051b2e] ml-2">
         {section.title}
       </h2>
-      <p className="text-md text-[#68747A] ml-2">{section.text}</p>
+      <p className="text-base text-[#68747A] ml-2">{section.text}</p>
       <button
         onClick={() => handleClick(section.id)}
-        className="flex flex-row gap-3 text-md text-[#051b2e] ml-2 group"
+        className="flex flex-row gap-3 text-base text-[#051b2e] ml-2 group"
       >
         Read More
         <div className="group-hover:translate-x-1 transition-all duration-300 ease-in-out">
