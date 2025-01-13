@@ -855,7 +855,7 @@ const Dhs = () => {
             </div>
 
             <span className="text-base">
-              ynamic Healing also offers remote healing sessions, ensuring
+              Dynamic Healing also offers remote healing sessions, ensuring
               accessibility for those unable to visit in person. In these
               sessions, patients are asked to provide a photograph, which is
               used to assess their energy readings. Since energy transcends
