@@ -9,7 +9,7 @@ const SpinalManipulation = () => {
     <div>
       <div
         className="lg:flex hidden flex-col border shadow-lg border-[#DADEE2] bg-[#F1F2F2] rounded-3xl lg:flex-row lg:flex-wrap gap-6 
-    items-center lg:items-start lg:justify-evenly ml-4 mr-4 mt-48  min-h-[110vh] font-poppins p-8 relative mb-8"
+    items-center lg:items-start lg:justify-evenly ml-4 mr-4 mt-48  min-h-[120vh] font-poppins py-24 relative mb-8"
       >
         <div className="flex absolute top-0 left-0">
           <img
@@ -36,7 +36,7 @@ const SpinalManipulation = () => {
                 />
               </div>
               <div>
-                <span className="text-lg font-normal text-[#051b2e]">
+                <span className="text-base font-normal text-[#051b2e]">
                   Your Health is Our Top Goal
                 </span>
               </div>
@@ -47,7 +47,7 @@ const SpinalManipulation = () => {
               </span>
             </div>
             <div className="w-full">
-              <span className="text-lg font-normal text-wrap text-[#051B2E] ">
+              <span className="text-base font-normal text-wrap text-[#051B2E] ">
                 Spinal manipulation, a common chiropractic treatment, is a
                 passive technique where a therapist applies a targeted manual
                 impulse or thrust to a joint, typically near the end of its
@@ -66,7 +66,7 @@ const SpinalManipulation = () => {
           </div>
         </div>
         <div className="w-full z-10 pl-24 pr-24">
-          <span className="text-lg font-normal text-wrap text-[#051B2E] ">
+          <span className="text-base font-normal text-wrap text-[#051B2E] ">
             This often results in an audible &quot;crack,&quot; which is widely
             attributed to the cavitation of spinal facet joints. Cavitation
             occurs when gas bubbles form in the joint due to lower-than-normal
@@ -74,13 +74,17 @@ const SpinalManipulation = () => {
             implode.
           </span>
         </div>
-        <div className="flex flex-row w-full z-10 px-24 items-center justify-center gap-12">
-          <div className="flex flex-col items-start justify-start relative gap-6 bg-[#ffcb53e2] h-[50vh] w-1/3 rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
+        <div className="flex flex-row w-full z-10 px-24 items-center justify-center gap-6 h-[100vh]">
+          <div className="flex flex-col items-start justify-start relative gap-4 bg-[#ffcb53e2] h-[80%] w-1/3 rounded-[2.5rem] pt-8 px-8 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex absolute right-0 bottom-0">
-              <img src={graphic3} alt="Example" className="w-full h-full" />
+              <img
+                src={graphic3}
+                alt="Example"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="flex flex-row items-center justify-between w-full gap-2">
-              <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
+            <div className="flex flex-row items-center justify-between text-wrap w-full gap-2">
+              <span className="text-3xl font-semibold  text-[#051B2E]">
                 Mechanism
               </span>
               <div className="bg-[#051B2E] w-16 h-16 rounded-2xl flex items-center justify-center">
@@ -88,7 +92,7 @@ const SpinalManipulation = () => {
               </div>
             </div>
             <div className="bg-[#a973317f] w-full h-[1px]"></div>
-            <div className="w-full h-[30vh]">
+            <div className="flex items-start justify-center w-full h-full">
               <span className="text-md font-normal text-wrap text-[#051B2E] z-10">
                 The primary characteristic of spinal manipulation techniques is
                 achieving the popping or cracking sound in synovial joints. This
@@ -97,7 +101,7 @@ const SpinalManipulation = () => {
               </span>
             </div>{" "}
           </div>
-          <div className="flex flex-col items-start justify-start relative gap-6 bg-[#051B2E] h-[50vh] w-1/3 rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
+          <div className="flex flex-col items-start justify-start relative gap-4 bg-[#051B2E] h-[80%] w-1/3 rounded-[2.5rem] pt-8 px-8 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex flex-row items-center justify-between w-full gap-2">
               <span className="text-2xl font-semibold text-wrap text-[#ffffff]">
                 Treatment Package
@@ -107,7 +111,7 @@ const SpinalManipulation = () => {
               </div>
             </div>
             <div className="bg-[#c1dcff] w-full h-[1px]"></div>
-            <div className="w-full h-[30vh]">
+            <div className="flex items-start justify-center w-full h-full">
               <span className="z-10 text-md font-normal text-wrap text-[#ffffff]">
                 Treatment plans can be tailored to individual needs, with
                 multiple-session packages available for addressing chronic
@@ -115,7 +119,7 @@ const SpinalManipulation = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col items-start justify-start relative gap-6 bg-[#d7e9f3] h-[50vh] w-1/3 rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
+          <div className="flex flex-col items-start justify-start relative gap-4 bg-[#d7e9f3] h-[80%] w-1/3 rounded-[2.5rem] pt-8 px-8 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
             <div className="flex absolute right-0 bottom-0">
               <img src={graphic2} alt="Example" className="w-full h-full" />
             </div>
@@ -128,7 +132,8 @@ const SpinalManipulation = () => {
               </div>
             </div>
             <div className="bg-[#a973317f] w-full h-[1px]"></div>
-            <div className="flex flex-col gap-4 text-md">
+
+            <div className="flex flex-col gap-4 lg:text-base text-sm w-full h-full ">
               <span>
                 {" "}
                 Spinal manipulations can provide significant relief from back

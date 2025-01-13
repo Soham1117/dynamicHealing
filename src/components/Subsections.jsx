@@ -22,8 +22,9 @@ function Subsections() {
 
   return (
     <div
-      className="flex flex-col justify-start shadow-lg relative lg:flex-row lg:flex-wrap lg:gap-10 gap-4 items-center bg-[#F1F2F2] rounded-3xl 
-    lg:items-start lg:justify-evenly ml-4 mr-4 mt-12 mb-24 min-h-[100vh] font-poppins pb-36"
+      className="flex flex-col justify-start shadow-lg relative lg:flex-row lg:flex-wrap 
+       gap-4 items-center bg-[#F1F2F2] rounded-3xl lg:items-start lg:justify-between 
+      ml-4 mr-4 min-h-[100vh] font-poppins pb-24"
     >
       <div className="lg:flex hidden absolute right-0">
         <img
@@ -53,8 +54,9 @@ function Subsections() {
           className="w-full h-full rounded-3xl"
         />
       </div>
-      <div className="lg:flex hidden flex-col items-start justify-start w-full ml-24 mr-24 mt-24 gap-6">
-        <div className="flex flex-row items-center justify-start gap-2 ">
+
+      <div className="lg:flex hidden flex-col items-start justify-start w-full px-24 pt-24 gap-2">
+        <div className="flex flex-row items-center justify-start gap-2">
           <div>
             <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
           </div>
@@ -70,7 +72,7 @@ function Subsections() {
           </span>
         </div>
         <div>
-          <span className="text-lg font-normal text-wrap text-[#68747A] ">
+          <span className="text-md font-normal text-wrap text-[#68747A] ">
             Combining advanced healing methods to nurture, restore, and
             rejuvenate your body.
           </span>

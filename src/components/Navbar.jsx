@@ -104,46 +104,42 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 transition-all duration-300 ease-in-out 
+      className={`sticky top-0 flex flex-row items-center justify-between transition-all w-full px-4 duration-300 ease-in-out bg-slate-200
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
         ${!isTop ? "bg-white/80 shadow-lg backdrop-blur-xl" : "bg-transparent"}
          py-3 z-50 rounded-2xl border border-gray-100/20`}
     >
-      <div className="container mx-auto px-2">
-        <div className="flex items-center justify-between gap-20">
-          <img src={logo} alt="DH logo" className="h-16 drop-shadow-sm" />
+      <img src={logo} alt="DH logo" className="h-16 drop-shadow-sm" />
 
-          <div className="hidden md:block">
-            <NavLinks />
-          </div>
+      <div className="hidden md:block">
+        <NavLinks />
+      </div>
 
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden p-2 hover:bg-gray-100/20 rounded-lg transition-colors"
-          >
-            {open ? <Menu size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+      <button
+        onClick={() => setOpen(!open)}
+        className="md:hidden p-2 hover:bg-gray-100/20 rounded-lg transition-colors"
+      >
+        {open ? <Menu size={24} /> : <Menu size={24} />}
+      </button>
 
-        {/* Mobile Menu */}
-        <div
-          className={`fixed inset-0 backdrop-blur-sm md:hidden transition-opacity duration-300
+      {/* Mobile Menu */}
+      <div
+        className={`fixed inset-0 backdrop-blur-sm md:hidden transition-opacity duration-300
             ${open ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        onClick={() => openFunc()}
+      >
+        <div
+          className={`absolute right-0 top-0 h-screen w-80 bg-white transform transition-opacity duration-700 ease-in-out
+              ${open ? "opacity-100" : "opacity-0"}`}
           onClick={() => openFunc()}
         >
-          <div
-            className={`absolute right-0 top-0 h-screen w-80 bg-white transform transition-opacity duration-700 ease-in-out
-              ${open ? "opacity-100" : "opacity-0"}`}
-            onClick={() => openFunc()}
-          >
-            <div className="p-6 flex flex-col items-end mt-4 gap-8">
-              <div className="flex flex-row justify-between w-full items-center">
-                <img src={logo} alt="DH logo" className="h-12 drop-shadow-sm" />
-                <X size={35} onClick={() => setOpen(false)} />
-              </div>
-              <div className="bg-[#c1dcff] w-full h-[1px]"></div>
-              <NavLinksVertical onItemClick={() => setOpen(false)} />
+          <div className="p-6 flex flex-col items-end mt-4 gap-8">
+            <div className="flex flex-row justify-between w-full items-center">
+              <img src={logo} alt="DH logo" className="h-12 drop-shadow-sm" />
+              <X size={35} onClick={() => setOpen(false)} />
             </div>
+            <div className="bg-[#c1dcff] w-full h-[1px]"></div>
+            <NavLinksVertical onItemClick={() => setOpen(false)} />
           </div>
         </div>
       </div>
