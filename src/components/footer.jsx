@@ -7,6 +7,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import graphic from "../assets/vr10.jpg";
+
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -190,11 +191,6 @@ const Footer = () => {
                   <span className="text-base">Youtube</span>
                 </div>
               </div>
-              <div className="flex">
-                <span className="text-xl font-semibold text-[#011954]">
-                  Disclaimer
-                </span>
-              </div>
             </div>
           </div>
           <div className="flex flex-col gap-7 w-1/2 z-10 ">
@@ -290,7 +286,12 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="flex items-start justify-center w-full z-10">
+        <div className="flex flex-col gap-2 items-start justify-center w-full z-10">
+          <div className="flex">
+            <span className="text-xl font-semibold text-[#011954]">
+              Disclaimer
+            </span>
+          </div>
           <span className="text-sm font-extralight text-wrap text-slate-600">
             Treatment sessions are meant to address energetic blockages that may
             have an impact on wellness, facilitating the body&apos;s natural

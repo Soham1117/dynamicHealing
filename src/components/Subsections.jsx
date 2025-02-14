@@ -1,5 +1,5 @@
 import Section from "./section.jsx";
-import section1Img from "../assets/section1.png";
+import section1Img from "../assets/dhs.jpg";
 import section2Img from "../assets/section2.jpeg";
 import logo from "../assets/logo_sil.svg";
 import graphic from "../assets/in14.webp";

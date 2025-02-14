@@ -6,7 +6,7 @@ const Calendar = () => {
   const [location, setLocation] = useState("");
 
   useEffect(() => {
-    fetch("../../public/config.json")
+    fetch("/config.json")
       .then((response) => response.json())
       .then((data) => {
         setLocation(data.location);

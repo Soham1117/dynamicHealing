@@ -863,11 +863,11 @@ const Dhs = () => {
               in-person sessions.
             </span>
           </div>
-          <div className="w-1/3 h-[40vh] drop-shadow-3xl relative">
+          <div className="w-1/3 h-[40vh]  drop-shadow-3xl relative">
             <img
               src={youtubebg}
               alt="Example"
-              className="h-full rounded-3xl object-cover"
+              className="w-full h-full rounded-3xl object-cover"
             />
           </div>
           <div className="flex flex-col relative gap-6 w-1/3 min-h-[40vh] bg-[#051B2E] p-10 rounded-l-3xl text-white  shadow-3xl overflow-hidden group">
