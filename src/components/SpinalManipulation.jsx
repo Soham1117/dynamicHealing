@@ -4,447 +4,165 @@ import graphic from "../assets/bl10.webp";
 import graphic2 from "../assets/h1-12.webp";
 import smBg from "../assets/sm.jpg";
 import graphic3 from "../assets/h1-11.webp";
+import React from "react";
+
 const SpinalManipulation = () => {
   return (
-    <div>
-      <div
-        className="lg:flex hidden flex-col border shadow-lg border-[#DADEE2] bg-[#F1F2F2] rounded-3xl lg:flex-row lg:flex-wrap gap-6 
-    items-center lg:items-start lg:justify-evenly ml-4 mr-4 mt-48  min-h-[120vh] font-poppins py-24 relative mb-8"
-      >
-        <div className="flex absolute top-0 left-0">
-          <img
-            src={graphic}
-            alt="Example"
-            className="w-full h-full opacity-50"
-          />
+    <div className="w-full min-h-screen p-4 md:p-6 lg:p-8">
+      {/* Main container with responsive padding and margin */}
+      <div className="relative w-full max-w-[2000px] mx-auto mt-12 sm:mt-24 lg:mt-32 mb-8 bg-[#F1F2F2] rounded-3xl border border-[#DADEE2] shadow-lg">
+        {/* Background graphics */}
+        <div className="absolute top-0 left-0 w-1/4 opacity-50 pointer-events-none">
+          <img src={graphic} alt="" className="w-full h-full object-cover" />
         </div>
-        <div className="flex absolute bottom-0 right-0">
-          <img
-            src={graphic}
-            alt="Example"
-            className="w-full h-full opacity-50"
-          />
+        <div className="absolute bottom-0 right-0 w-1/4 opacity-50 pointer-events-none">
+          <img src={graphic} alt="" className="w-full h-full object-cover" />
         </div>
-        <div className="flex flex-row gap-6 items-end justify-start pr-24">
-          <div className="flex flex-col gap-8 z-10 pl-24  py-8">
-            <div className="flex flex-row items-center justify-start gap-2">
-              <div>
-                <img
-                  src={logo}
-                  alt="Example"
-                  className="w-10 h-10 rounded-full"
-                />
-              </div>
-              <div>
-                <span className="text-base font-normal text-[#051b2e]">
+
+        {/* Content wrapper */}
+        <div className="relative z-10 flex flex-col w-full gap-8 p-6 md:p-8 lg:p-12">
+          {/* Header section */}
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center lg:items-start">
+            <div className="flex flex-col gap-6 flex-1">
+              {/* Logo and tagline */}
+              <div className="flex items-center gap-3">
+                <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
+                <span className="text-base text-[#051b2e]">
                   Your Health is Our Top Goal
                 </span>
               </div>
-            </div>
-            <div>
-              <span className="text-5xl  font-semibold text-wrap text-[#051b2e]">
+
+              {/* Title */}
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#051b2e]">
                 Spinal Manipulation
-              </span>
-            </div>
-            <div className="w-full">
-              <span className="text-base font-normal text-wrap text-[#051B2E] ">
+              </h1>
+
+              {/* Description */}
+              <p className="text-base text-[#051B2E]">
                 Spinal manipulation, a common chiropractic treatment, is a
                 passive technique where a therapist applies a targeted manual
                 impulse or thrust to a joint, typically near the end of its
                 passive range of motion.
-              </span>
+              </p>
             </div>
-            <div className="bg-[#c1dcff] w-full h-[1px]"></div>
-          </div>
-          <div className="z-10">
-            <img
-              src={smBg}
-              alt="Example"
-              className="w-[100%] h-[100%] rounded-3xl z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.10)] 
-            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
-            />
-          </div>
-        </div>
-        <div className="w-full z-10 pl-24 pr-24">
-          <span className="text-base font-normal text-wrap text-[#051B2E] ">
-            This often results in an audible &quot;crack,&quot; which is widely
-            attributed to the cavitation of spinal facet joints. Cavitation
-            occurs when gas bubbles form in the joint due to lower-than-normal
-            pressure, and the subsequent rise in pressure causes the bubble to
-            implode.
-          </span>
-        </div>
-        <div className="flex flex-row w-full z-10 px-24 items-center justify-center gap-6 h-[100vh]">
-          <div className="flex flex-col items-start justify-start relative gap-4 bg-[#ffcb53e2] h-[80%] w-1/3 rounded-[2.5rem] pt-8 px-8 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
-            <div className="flex absolute right-0 bottom-0">
+
+            {/* Main image */}
+            <div className="w-full lg:w-1/2 xl:w-1/4">
               <img
-                src={graphic3}
-                alt="Example"
-                className="w-full h-full object-cover"
+                src={smBg}
+                alt="Spinal Manipulation"
+                className="w-full h-auto rounded-3xl shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl"
               />
             </div>
-            <div className="flex flex-row items-center justify-between text-wrap w-full gap-2">
-              <span className="text-3xl font-semibold  text-[#051B2E]">
-                Mechanism
-              </span>
-              <div className="bg-[#051B2E] w-16 h-16 rounded-2xl flex items-center justify-center">
-                <FaCogs className="text-3xl text-[#FFFFFF] group-hover:animate-upAndDown" />
-              </div>
-            </div>
-            <div className="bg-[#a973317f] w-full h-[1px]"></div>
-            <div className="flex items-start justify-center w-full h-full">
-              <span className="text-base font-normal text-wrap text-[#051B2E] z-10">
-                The primary characteristic of spinal manipulation techniques is
-                achieving the popping or cracking sound in synovial joints. This
-                audible release is thought to result from the implosion of gas
-                bubbles within the joint, a phenomenon known as cavitation.
-              </span>
-            </div>{" "}
           </div>
-          <div className="flex flex-col items-start justify-start relative gap-4 bg-[#051B2E] h-[80%] w-1/3 rounded-[2.5rem] pt-8 px-8 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
-            <div className="flex flex-row items-center justify-between w-full gap-2">
-              <span className="text-2xl font-semibold text-wrap text-[#ffffff]">
-                Treatment Package
-              </span>
-              <div className="bg-[#ffffff] w-16 h-16 rounded-2xl flex items-center justify-center">
-                <FaBox className="text-3xl text-[#051B2E] group-hover:animate-upAndDown" />
-              </div>
-            </div>
-            <div className="bg-[#c1dcff] w-full h-[1px]"></div>
-            <div className="flex items-start justify-center w-full h-full">
-              <span className="z-10 text-base font-normal text-wrap text-[#ffffff]">
-                Treatment plans can be tailored to individual needs, with
-                multiple-session packages available for addressing chronic
-                conditions effectively.
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col items-start justify-start relative gap-4 bg-[#d7e9f3] h-[80%] w-1/3 rounded-[2.5rem] pt-8 px-8 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
-            <div className="flex absolute right-0 bottom-0">
-              <img src={graphic2} alt="Example" className="w-full h-full" />
-            </div>
-            <div className="flex flex-row items-center justify-between w-full gap-2">
-              <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
-                Benefits
-              </span>
-              <div className="bg-[#051B2E] w-16 h-16 rounded-2xl flex items-center justify-center">
-                <FaGift className="text-3xl text-[#FFFFFF] group-hover:animate-upAndDown" />
-              </div>
-            </div>
-            <div className="bg-[#a973317f] w-full h-[1px]"></div>
+          <div className="w-full h-px bg-[#c1dcff]" />
+          {/* Additional description */}
+          <p className="text-base text-[#051B2E] max-w-full">
+            This often results in an audible "crack," which is widely attributed
+            to the cavitation of spinal facet joints. Cavitation occurs when gas
+            bubbles form in the joint due to lower-than-normal pressure, and the
+            subsequent rise in pressure causes the bubble to implode.
+          </p>
 
-            <div className="flex flex-col gap-4 lg:text-base text-sm w-full h-full ">
-              <span>
-                {" "}
-                Spinal manipulations can provide significant relief from back
-                pain by:
-              </span>
-              <div className="z-10 flex flex-col items-start justify-start gap-2 text-[#051B2E] text-base h-[22vh]">
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Reducing pressure on sensitive nerves</span>
-                </span>
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Increasing joint range of motion</span>
-                </span>
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Restoring blood flow</span>
-                </span>
-
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Reducing muscle tension</span>
-                </span>
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Stimulating the release of endorphins</span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="flex lg:hidden flex-col justify-center border shadow-lg border-[#DADEE2] bg-[#F1F2F2] rounded-3xl gap-6 
-        items-start t-48  min-h-[110vh] font-poppins mx-2 p-4 relative mb-8 pb-24"
-      >
-        <div className="flex absolute top-0 left-0">
-          <img
-            src={graphic}
-            alt="Example"
-            className="w-full h-full opacity-50"
-          />
-        </div>
-        <div className="flex absolute bottom-0 right-0">
-          <img
-            src={graphic}
-            alt="Example"
-            className="w-full h-full opacity-50"
-          />
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <div className="flex flex-col gap-8 z-10 py-8 items-center justify-start">
-            <div className="flex flex-col items-center justify-center gap-2">
-              <div>
+          {/* Cards section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-8">
+            {/* Mechanism Card */}
+            <div className="relative bg-[#ffcb53e2] rounded-3xl p-6 md:p-8 shadow-md min-h-[24rem] group">
+              <div className="absolute right-0 bottom-0 pointer-events-none">
                 <img
-                  src={logo}
-                  alt="Example"
-                  className="w-10 h-10 rounded-full"
+                  src={graphic3}
+                  alt=""
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div>
-                <span className="text-base font-normal text-[#051b2e]">
-                  Your Health is Our Top Goal
-                </span>
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#051B2E]">
+                  Mechanism
+                </h3>
+                <div className="bg-[#051B2E] w-14 h-14 rounded-xl flex items-center justify-center">
+                  <FaCogs className="text-2xl text-white group-hover:animate-bounce" />
+                </div>
               </div>
-            </div>
-            <div>
-              <span className="text-3xl font-semibold text-wrap text-[#051b2e]">
-                Spinal Manipulation
-              </span>
-            </div>
-            <div className="w-full">
-              <span className="text-base font-normal text-wrap text-[#051B2E] ">
-                Spinal manipulation, a common chiropractic treatment, is a
-                passive technique where a therapist applies a targeted manual
-                impulse or thrust to a joint, typically near the end of its
-                passive range of motion.
-              </span>
-            </div>
-          </div>
-          <div className="z-10">
-            <img
-              src={smBg}
-              alt="Example"
-              className="w-[100%] h-[100%] rounded-3xl z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.10)] 
-      hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
-            />
-          </div>
-        </div>
-        <div className="w-full z-10">
-          <span className="text-base font-normal text-wrap text-[#051B2E] ">
-            This often results in an audible &quot;crack,&quot; which is widely
-            attributed to the cavitation of spinal facet joints. Cavitation
-            occurs when gas bubbles form in the joint due to lower-than-normal
-            pressure, and the subsequent rise in pressure causes the bubble to
-            implode.
-          </span>
-        </div>
-        <div className="flex flex-col w-full z-10 items-start justify-center gap-12">
-          <div className="flex flex-col items-start justify-start relative gap-6 bg-[#ffcb53e2] h-[26rem] w-full rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
-            <div className="flex absolute right-0 bottom-0">
-              <img src={graphic3} alt="Example" className="w-full h-full" />
-            </div>
-            <div className="flex flex-row items-center justify-between w-full gap-2">
-              <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
-                Mechanism
-              </span>
-              <div className="bg-[#051B2E] w-16 h-16 rounded-2xl flex items-center justify-center">
-                <FaCogs className="text-3xl text-[#FFFFFF] group-hover:animate-upAndDown" />
-              </div>
-            </div>
-            <div className="bg-[#a973317f] w-full h-[1px]"></div>
-            <div className="w-full h-[30vh]">
-              <span className="text-base font-normal text-wrap text-[#051B2E] z-10">
+              <div className="h-px bg-[#a973317f] mb-4" />
+              <p className="text-base text-[#051B2E] z-10 relative">
                 The primary characteristic of spinal manipulation techniques is
                 achieving the popping or cracking sound in synovial joints. This
                 audible release is thought to result from the implosion of gas
                 bubbles within the joint, a phenomenon known as cavitation.
-              </span>
-            </div>{" "}
-          </div>
-          <div className="flex flex-col items-start justify-start relative gap-6 bg-[#051B2E] h-[24rem] w-full rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
-            <div className="flex flex-row items-center justify-between w-full gap-2">
-              <span className="text-2xl font-semibold text-wrap text-[#ffffff]">
-                Treatment Package
-              </span>
-              <div className="bg-[#ffffff] w-16 h-16 rounded-2xl flex items-center justify-center">
-                <FaBox className="text-3xl text-[#051B2E] group-hover:animate-upAndDown" />
-              </div>
+              </p>
             </div>
-            <div className="bg-[#c1dcff] w-full h-[1px]"></div>
-            <div className="w-full h-[30vh]">
-              <span className="z-10 text-base font-normal text-wrap text-[#ffffff]">
+
+            {/* Treatment Package Card */}
+            <div className="relative bg-[#051B2E] rounded-3xl p-6 md:p-8 shadow-md min-h-[24rem] group">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl md:text-3xl font-semibold text-white">
+                  Treatment Package
+                </h3>
+                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
+                  <FaBox className="text-2xl text-[#051B2E] group-hover:animate-bounce" />
+                </div>
+              </div>
+              <div className="h-px bg-[#c1dcff] mb-4" />
+              <p className="text-base text-white">
                 Treatment plans can be tailored to individual needs, with
                 multiple-session packages available for addressing chronic
                 conditions effectively.
-              </span>
+              </p>
             </div>
-          </div>
-          <div className="flex flex-col items-start justify-start relative gap-6 bg-[#d7e9f3] h-[32rem] w-full rounded-[2.5rem] pt-8 px-12 group shadow-[0px_5px_0px_rgba(0,0,0,0.25)]">
-            <div className="flex absolute right-0 bottom-0">
-              <img src={graphic2} alt="Example" className="w-full h-full" />
-            </div>
-            <div className="flex flex-row items-center justify-between w-full gap-2">
-              <span className="text-3xl font-semibold text-wrap text-[#051B2E]">
-                Benefits
-              </span>
-              <div className="bg-[#051B2E] w-16 h-16 rounded-2xl flex items-center justify-center">
-                <FaGift className="text-3xl text-[#FFFFFF] group-hover:animate-upAndDown" />
-              </div>
-            </div>
-            <div className="bg-[#a973317f] w-full h-[1px]"></div>
-            <div className="flex flex-col gap-4 text-base">
-              <span>
-                {" "}
-                Spinal manipulations can provide significant relief from back
-                pain by:
-              </span>
-              <div className="z-10 flex flex-col items-start justify-start gap-2 text-[#051B2E] text-base h-[22vh]">
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Reducing pressure on sensitive nerves</span>
-                </span>
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Increasing joint range of motion</span>
-                </span>
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Restoring blood flow</span>
-                </span>
 
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Reducing muscle tension</span>
-                </span>
-                <span className="flex flex-row gap-2 items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Stimulating the release of endorphins</span>
-                </span>
+            {/* Benefits Card */}
+            <div className="relative bg-[#d7e9f3] rounded-3xl p-6 md:p-8 shadow-md min-h-[24rem] group md:col-span-2 lg:col-span-1">
+              <div className="absolute right-0 bottom-0 pointer-events-none">
+                <img
+                  src={graphic2}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#051B2E]">
+                  Benefits
+                </h3>
+                <div className="bg-[#051B2E] w-14 h-14 rounded-xl flex items-center justify-center">
+                  <FaGift className="text-2xl text-white group-hover:animate-bounce" />
+                </div>
+              </div>
+              <div className="h-px bg-[#a973317f] mb-4" />
+              <div className="relative z-10">
+                <p className="text-base text-[#051B2E] mb-4">
+                  Spinal manipulations can provide significant relief from back
+                  pain by:
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "Reducing pressure on sensitive nerves",
+                    "Increasing joint range of motion",
+                    "Restoring blood flow",
+                    "Reducing muscle tension",
+                    "Stimulating the release of endorphins",
+                  ].map((benefit, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center gap-2 text-[#051B2E]"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.5}
+                          d="m4.5 12.75 6 6 9-13.5"
+                        />
+                      </svg>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
