@@ -15,7 +15,7 @@ import logo from "../assets/logo_sil.svg";
 import rhsBg from "../assets/1.png";
 import rhsBg2 from "../assets/2.png";
 import youtubebg from "../assets/youtubebg.jpg";
-
+import addiction from "../assets/addiction 2.jpg";
 import { useState, useRef } from "react";
 import {
   FaFemale,
@@ -111,7 +111,7 @@ const options = [
   },
   {
     label: "Addictions and Weight Management",
-    image: preventative,
+    image: addiction,
     content: "Tobacco, Narcotics, Alcohol, Weight Loss.",
     icon: FaBalanceScale,
   },
@@ -667,7 +667,7 @@ const Dhs = () => {
               userSelect: "none",
               overflowY: "auto",
               scrollbarWidth: "none",
-              scrollBehavior: "smooth",
+              scrollBehavior: "smooth", // For smooth scrolling
             }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
@@ -677,7 +677,7 @@ const Dhs = () => {
             {options.map((option) => (
               <span
                 key={option.label}
-                className={`cursor-pointer ${
+                className={`cursor-pointer hover:text-[#051B2E] transitions-all duration-300 ease-in-out ${
                   selectedOption.label === option.label
                     ? "text-[#051B2E] font-bold"
                     : ""
@@ -721,8 +721,8 @@ const Dhs = () => {
               }`}
             />
           </div>
-          <div className="flex flex-col gap-6 rounded-3xl w-1/2 h-1/2 bg-[#09243c] p-5 absolute top-1/2 left-[16%] z-30 group-hover:-translate-y-2 group-hover:translate-x-2 transition-all duration-300 ease-in-out">
-            <div className="p-2">
+          <div className="flex flex-col gap-6 rounded-3xl w-1/2 h-1/2 bg-[#09243c] p-5 absolute top-1/2 left-[15%] z-30 group-hover:-translate-y-2 group-hover:translate-x-2 transition-all duration-300 ease-in-out">
+            <div className="py-2">
               <selectedOption.icon
                 className={`text-white text-5xl ${
                   isTransitioning ? "animate-fadeIn" : ""
@@ -888,7 +888,6 @@ const Dhs = () => {
           </div>
         </div>
       </div>
-
       <div className="flex lg:hidden flex-col items-center justify-start gap-0 min-h-[80vh] mb-20">
         <div className="flex flex-col relative gap-6 w-full bg-[#051B2E] p-6  text-white h-full shadow-3xl overflow-hidden group pb-12">
           <span className="text-3xl font-semibold text-wrap text-[#ffffff] ">

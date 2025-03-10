@@ -19,7 +19,7 @@ const Story = ({ story }) => {
 
   return (
     <div
-      className="flex flex-col items-start justify-start bg-[#f1f2f2] rounded-2xl p-6 z-20 font-poppins gap-6 
+      className="flex flex-col items-start justify-start bg-[#f1f2f2] rounded-2xl p-4 z-20 font-poppins gap-6 
           shadow-[0px_5px_0px_rgba(0,0,0,0.20)] hover:-translate-y-9 hover:shadow-2xl 
           transition-all duration-500 ease-out mt-10 w-11/12 group h-[95%] border-2 border-[#dadee2]"
     >
@@ -100,11 +100,9 @@ const Story = ({ story }) => {
           )}
         </div>
       </div>
-      <div className="h-[5vh]">
-        <h2 className="text-xl font-medium text-[#051b2e] ml-2">
-          {story.title}
-        </h2>
-      </div>
+
+      <h2 className="text-xl font-medium text-[#051b2e] ml-2">{story.title}</h2>
+
       <div className="bg-[#dadee2] w-full h-[1px]"></div>
       <p className="text-base text-[#68747A] ml-2">{story.text}</p>
     </div>

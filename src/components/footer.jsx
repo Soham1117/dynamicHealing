@@ -79,10 +79,7 @@ const Footer = () => {
               <span>Request An Appointment!</span>
             </div>
             <div className="flex text-base text-[#68747A] items-start justify-start">
-              <span>
-                We are always ready to help you at any time, let’s talk
-                together.
-              </span>
+              <span>We’re always here to help-let’s connect!</span>
             </div>
             <div className="flex flex-col gap-8 justify-start">
               <div className="flex flex-row items-start">
@@ -123,7 +120,7 @@ const Footer = () => {
                       Email Address
                     </span>
                     <span className="text-base text-[#68747A]">
-                      dynamichealing @gmail.com
+                      dynamichealing@gmail.com
                     </span>
                   </div>
                 </div>

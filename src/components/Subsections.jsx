@@ -1,4 +1,4 @@
-import Section from "./section.jsx";
+import Section from "./Section";
 import section1Img from "../assets/dhs.jpg";
 import section2Img from "../assets/section2.jpeg";
 import logo from "../assets/logo_sil.svg";

@@ -41,7 +41,7 @@ const SuccessStories = () => {
     },
     {
       title: "Congenital Ptosis with Jaw Winking Syndrome",
-      text: "Case of Congenital Ptosis of 6 years old child with Marcus Jaw winking syndrome improved after multiple sessions. Below are the image of the boy having the syndrome.",
+      text: "Case of Congenital Ptosis of 6 years old child with Marcus Jaw winking syndrome improved after multiple sessions. Above are the images of the boy having the syndrome.",
       img: [story2],
       number: 1,
     },
