@@ -64,10 +64,15 @@ const Calendar = () => {
     }
 
     for (let day = 1; day <= daysInMonth; day++) {
-      const isThirdFriday = day === thirdFriday.getDate();
-      const isThirdSaturday = day === weekend.saturday.getDate();
-      const isThirdSunday = day === weekend.sunday.getDate();
+      let isThirdFriday = day === thirdFriday.getDate();
+      let isThirdSaturday = day === weekend.saturday.getDate();
+      let isThirdSunday = day === weekend.sunday.getDate();
 
+      if (month == 3) {
+        isThirdFriday = day === 19;
+        isThirdSaturday = day === 20;
+        isThirdSunday = day === 21;
+      }
       const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday;
 
       days.push(
