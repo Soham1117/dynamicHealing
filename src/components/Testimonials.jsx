@@ -63,6 +63,38 @@ const Testimonials = () => {
                 </p>
               </div>
             </div>
+            <div class="w-full mx-auto rounded-lg bg-white border border-[#cfcac5] p-5 text-[#051b2e] font-light mb-6 hover:shadow-lg hover:border-black transition-all ease-in-out duration-300">
+              <div class="w-full flex mb-4 items-center justify-center">
+                <div class="rounded-full w-10 h-10 bg-gray-50 border flex items-center justify-center border-[#cfcac5]">
+                  <FaA />
+                </div>
+                <div class="flex-grow pl-3">
+                  <h6 class="font-bold text-sm  text-gray-600">
+                    Krishna Patel
+                  </h6>
+                </div>
+              </div>
+              <div class="w-full">
+                <p class="text-sm leading-tight">
+                  <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                    "
+                  </span>
+                  The approach by Dr. Divij Tanna at Dynamic Healing is truly
+                  exceptional! I have been admitted to the hospital twice for
+                  different diagnoses—firstly for an idiopathic cause and, more
+                  recently, for dengue fever. Both times, the hospital
+                  management failed to provide effective treatment. However, my
+                  complete recovery was achieved through his treatment, and that
+                  too in an extremely short duration.
+                </p>
+                <p class="text-sm leading-tight">
+                  Thank you so much, Dr. Tanna!
+                  <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                    "
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="px-3 md:w-1/3">
             <div class="w-full mx-auto rounded-lg bg-white border border-[#cfcac5] p-5 text-[#051b2e] font-light mb-6 hover:shadow-lg hover:border-black transition-all ease-in-out duration-300">
@@ -166,31 +198,36 @@ const Testimonials = () => {
               </div>
             </div>
             <div class="w-full mx-auto rounded-lg bg-white border border-[#cfcac5] p-5 text-[#051b2e] font-light mb-6 hover:shadow-lg hover:border-black transition-all ease-in-out duration-300">
-              <div class="w-full flex mb-4 items-center justify-center">
+              <div class="w-full flex mb-4 items-center">
                 <div class="rounded-full w-10 h-10 bg-gray-50 border flex items-center justify-center border-[#cfcac5]">
-                  <FaA />
+                  <FaV />
                 </div>
                 <div class="flex-grow pl-3">
                   <h6 class="font-bold text-sm  text-gray-600">
-                    Krishna Patel
+                    Vatsaal Thakkar
                   </h6>
                 </div>
               </div>
               <div class="w-full">
                 <p class="text-sm leading-tight">
-                  <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                    "
-                  </span>
-                  The approach by Dr. Divij Tanna at Dynamic Healing is truly
-                  exceptional! I have been admitted to the hospital twice for
-                  different diagnoses—firstly for an idiopathic cause and, more
-                  recently, for dengue fever. Both times, the hospital
-                  management failed to provide effective treatment. However, my
-                  complete recovery was achieved through his treatment, and that
-                  too in an extremely short duration.
+                  {" "}
+                  The experience with Dynamic healing and Dr Tanna is
+                  unexplainable..I used to take DH treatment 10 years back..and
+                  started again from six months now..I am already so convinced
+                  about his method and results as it's through my own body
+                  wisdom, being into spiritual practices and seeing energy vastu
+                  consultants using the same principles and devices makes the
+                  approch so right..and Dr.Tanna's neutral perspective as medium
+                  to my body and the healing process,and always ready to give
+                  his best to help us getting healed.
                 </p>
                 <p class="text-sm leading-tight">
-                  Thank you so much, Dr. Tanna!
+                  {" "}
+                  I strongly recommend everyone to take dynamic healing once in
+                  a six months to keep ourselves healthy and see him if our body
+                  is imbalance in some ways.. Wishing Dr Dwij Tanna and Malay
+                  tanna a good luck and success and thanks for providing us an
+                  awesome healing experience without any side effects..
                   <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
                     "
                   </span>

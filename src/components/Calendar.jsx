@@ -37,6 +37,7 @@ const Calendar = () => {
   const renderDays = () => {
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
+    console.log("Rendering days for:", year, month);
     const daysInMonth = getDaysInMonth(year, month);
     const firstDay = new Date(year, month, 1).getDay();
     const days = [];
@@ -68,10 +69,10 @@ const Calendar = () => {
       let isThirdSaturday = day === weekend.saturday.getDate();
       let isThirdSunday = day === weekend.sunday.getDate();
 
-      if (month == 3) {
-        isThirdFriday = day === 19;
-        isThirdSaturday = day === 20;
-        isThirdSunday = day === 21;
+      if (month == 5) {
+        isThirdFriday = day === 21;
+        isThirdSaturday = day === 22;
+        isThirdSunday = day === 23;
       }
       const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday;
 
