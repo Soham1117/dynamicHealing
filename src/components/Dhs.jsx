@@ -1,6 +1,6 @@
 import YoutubeBg from "./YoutubeBg";
 import women from "../assets/women.jpg";
-import men from "../assets/mens health.jpg";
+import men from "../assets/menshealth.jpg";
 import chronic from "../assets/chronic2.jpg";
 import eye from "../assets/eye.jpg";
 import digestive from "../assets/disgestive.jpg";
