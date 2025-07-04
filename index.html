@@ -3,23 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/assets/logo.ico" />
+    
+    <!-- Optimized font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Load only necessary font weights -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@400;500;600;700&family=Bungee+Tint&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bungee+Tint&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@400;500;600;700&family=Bungee+Tint&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/index-Cyr2TUbK.css" as="style" />
+    <link rel="preload" href="/assets/config.json" as="fetch" crossorigin />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dynamic Healing India - Professional chiropractic care and spinal manipulation therapy. Expert treatment for back pain, neck pain, and musculoskeletal issues. Book your consultation today for personalized healing solutions." />
     <title>Dynamic Healing India</title>
+    
+    <!-- Critical CSS inline placeholder -->
+    <style>
+      /* Add your critical above-the-fold CSS here */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading logo */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .loading img {
+        width: 80px;
+        height: 80px;
+        animation: pulse 2s ease-in-out infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.7;
+          transform: scale(1.05);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading">
+        <img src="/src/assets/logo_sil.svg" alt="Dynamic Healing India" />
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
-    <script type="text/javascript" src="/src/assets/config.json"></script>
   </body>
 </html>

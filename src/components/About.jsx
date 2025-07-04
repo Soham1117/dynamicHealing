@@ -49,7 +49,7 @@ const About = () => {
             <div>
               <img
                 src={logo}
-                alt="Example"
+                alt="Dynamic Healing India logo"
                 className="w-10 h-10 rounded-full"
               />
             </div>
@@ -124,7 +124,7 @@ const About = () => {
       <div className="lg:hidden flex">
         <div className="flex items-start justify-center group">
           <div className="absolute flex w-[90%] aspect-[4/5] drop-shadow-xl group-hover:-translate-y-2 group-hover:-translate-x-2 transition-all duration-300 ease-in-out">
-            <img src={about} className="w-full h-full rounded-3xl" />
+            <img src={about} alt="Medical professional providing care" className="w-full h-full rounded-3xl" />
           </div>
           <div className="flex flex-col gap-2 w-40 aspect-[4/3] bg-[#09243c] rounded-3xl px-4 pt-6 pb-3 relative top-[14rem] left-14 z-30">
             <div className="flex flex-col gap-8">
@@ -144,7 +144,7 @@ const About = () => {
       <div className="lg:flex flex-col items-start justify-start h-full hidden gap-4 w-1/2 pr-[8%]">
         <div className="flex flex-row items-center justify-start gap-2 w-full">
           <div>
-            <img src={logo} alt="Example" className="w-10 h-10 rounded-full" />
+            <img src={logo} alt="Dynamic Healing India logo" className="w-10 h-10 rounded-full" />
           </div>
           <div>
             <span className="text-lg font-normal text-[#68747A]">
