@@ -69,10 +69,10 @@ const Calendar = () => {
       let isThirdSaturday = day === weekend.saturday.getDate();
       let isThirdSunday = day === weekend.sunday.getDate();
 
-      if (month == 6) {
-        isThirdFriday = day === 19;
-        isThirdSaturday = day === 20;
-        isThirdSunday = day === 21;
+      if (month == 9) {
+        isThirdFriday = day === 17;
+        isThirdSaturday = day === 18;
+        isThirdSunday = day === 19;
       }
       const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday;
 
