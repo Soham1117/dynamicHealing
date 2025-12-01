@@ -10,6 +10,10 @@ const GlobalMap = () => {
     },
     {
       start: { lat: 23.4241, lng: 53.8478, label: "UAE" }, // UAE
+      end: { lat: 51.1657, lng: 10.4515, label: "Germany" }, // Germany (center)
+    },
+    {
+      start: { lat: 51.1657, lng: 10.4515, label: "Germany" }, // Germany
       end: { lat: 46.2276, lng: 2.2137, label: "France" }, // France
     },
     {
@@ -19,6 +23,14 @@ const GlobalMap = () => {
     {
       start: { lat: 51.5074, lng: -0.1278, label: "UK" }, // UK
       end: { lat: 37.0902, lng: -95.7129, label: "USA" }, // USA
+    },
+    {
+      start: { lat: 37.0902, lng: -95.7129, label: "USA" }, // USA
+      end: { lat: -25.2744, lng: 133.7751, label: "Australia" }, // Australia (center)
+    },
+    {
+      start: { lat: -25.2744, lng: 133.7751, label: "Australia" }, // Australia
+      end: { lat: -40.9006, lng: 174.886, label: "New Zealand" }, // New Zealand (center)
     },
   ];
 
@@ -68,8 +80,8 @@ const GlobalMap = () => {
             {/* Description */}
             <p className="text-lg text-[#68747A] max-w-2xl text-center leading-relaxed">
               Our healing sessions transcend borders, bringing transformative
-              wellness to patients across India, France, UK, UAE, and the United
-              States. Distance is no barrier to healing.
+              wellness to patients across India, UAE, Germany, France, UK, USA,
+              Australia, and New Zealand. Distance is no barrier to healing.
             </p>
           </div>
 
@@ -124,8 +136,8 @@ const GlobalMap = () => {
             {/* Description */}
             <p className="text-sm text-[#68747A] text-center leading-relaxed">
               Our healing sessions transcend borders, bringing transformative
-              wellness to patients across India, France, UK, UAE, and the United
-              States.
+              wellness to patients across India, UAE, Germany, France, UK, USA,
+              Australia, and New Zealand.
             </p>
           </div>
 
