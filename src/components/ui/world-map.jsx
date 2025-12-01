@@ -17,7 +17,7 @@ export function WorldMap({
   });
 
   const projectPoint = (lat, lng) => {
-    const x = (lng + 180) * (800 / 360);
+    const x = (lng + 180) * (950 / 360);
     const y = (90 - lat) * (400 / 180);
     return { x, y };
   };
@@ -39,11 +39,11 @@ export function WorldMap({
         className="h-full w-full pointer-events-none select-none"
         alt="world map"
         height="495"
-        width="1056"
-        draggable={false} />
+        width="1200"
+        draggable={true} />
       <svg
         ref={svgRef}
-        viewBox="0 0 800 400"
+        viewBox="0 0 950 400"
         className="w-full h-full absolute inset-0 pointer-events-none select-none">
         {dots.map((dot, i) => {
           const startPoint = projectPoint(dot.start.lat, dot.start.lng);
@@ -161,19 +161,34 @@ export function WorldMap({
             }
           });
 
-          return Array.from(uniqueLocations.values()).map((location, i) => (
-            <g key={`label-${i}`}>
-              <text
-                x={location.point.x}
-                y={location.point.y - 12}
-                textAnchor="middle"
-                className="fill-[#051b2e] text-[10px] font-semibold pointer-events-none select-none"
-                style={{ fontFamily: 'Poppins, sans-serif' }}
-              >
-                {location.label}
-              </text>
-            </g>
-          ));
+          return Array.from(uniqueLocations.values()).map((location, i) => {
+            // Custom positioning for overlapping labels
+            let xOffset = 0;
+            let yOffset = -12;
+            let anchor = "middle";
+            
+            if (location.label === "UK") {
+              xOffset = -20; // Move UK label to the left
+              yOffset = -5;
+              anchor = "end";
+            } else if (location.label === "Germany") {
+              yOffset = -18; // Move Germany label higher
+            }
+            
+            return (
+              <g key={`label-${i}`}>
+                <text
+                  x={location.point.x + xOffset}
+                  y={location.point.y + yOffset}
+                  textAnchor={anchor}
+                  className="fill-[#051b2e] text-[10px] font-semibold pointer-events-none select-none"
+                  style={{ fontFamily: 'Poppins, sans-serif' }}
+                >
+                  {location.label}
+                </text>
+              </g>
+            );
+          });
         })()}
       </svg>
     </div>

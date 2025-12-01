@@ -25,12 +25,12 @@ const GlobalMap = () => {
       end: { lat: 37.0902, lng: -95.7129, label: "USA" }, // USA
     },
     {
-      start: { lat: 37.0902, lng: -95.7129, label: "USA" }, // USA
-      end: { lat: -25.2744, lng: 133.7751, label: "Australia" }, // Australia (center)
+      start: { lat: -40.0, lng: 133.7751, label: "Australia" }, // Australia (southern position)
+      end: { lat: 20.5937, lng: 78.9629, label: "India" }, // India (completing the circle)
     },
     {
-      start: { lat: -25.2744, lng: 133.7751, label: "Australia" }, // Australia
-      end: { lat: -40.9006, lng: 174.886, label: "New Zealand" }, // New Zealand (center)
+      start: { lat: -40.0, lng: 133.7751, label: "Australia" }, // Australia
+      end: { lat: -80.9006, lng: 165.886, label: "New Zealand" }, // New Zealand (center)
     },
   ];
 
@@ -86,7 +86,7 @@ const GlobalMap = () => {
           </div>
 
           {/* World Map */}
-          <div className="w-full max-w-6xl mt-8">
+          <div className="w-full max-w-7xl mt-8">
             <WorldMap dots={patientConnections} lineColor="#4A90E2" />
           </div>
         </div>
