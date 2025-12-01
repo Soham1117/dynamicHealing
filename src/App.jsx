@@ -11,6 +11,7 @@ import SpinalManipulation from "./components/SpinalManipulation";
 import SuccessStories from "./components/SuccessStories";
 import ScrollTop from "./components/scrollTop";
 import Testimonials from "./components/Testimonials";
+import GlobalMap from "./components/GlobalMap";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
           </section>
           <section id="faq">
             <Faq />
+          </section>
+          <section id="globalMap">
+            <GlobalMap />
           </section>
           <footer id="contact">
             <Footer />
