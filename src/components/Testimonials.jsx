@@ -234,6 +234,54 @@ const Testimonials = () => {
                 </p>
               </div>
             </div>
+            <div class="w-full mx-auto rounded-lg bg-white border border-[#cfcac5] p-5 text-[#051b2e] font-light mb-6 hover:shadow-lg hover:border-black transition-all ease-in-out duration-300">
+              <div class="w-full flex mb-4 items-center">
+                <div class="rounded-full w-10 h-10 bg-gray-50 border flex items-center justify-center border-[#cfcac5]">
+                  <FaV />
+                </div>
+                <div class="flex-grow pl-3">
+                  <h6 class="font-bold text-sm text-gray-600">
+                    Viraj Didwania
+                  </h6>
+                </div>
+              </div>
+              <div class="w-full">
+                <p class="text-sm leading-tight">
+                  <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                    "
+                  </span>
+                  I would like to express my heartfelt gratitude to Dr. Divij
+                  Tanna for the incredible care and transformation he has
+                  brought into our lives. My father, Vimal ji, is 70 years old,
+                  and the difference in his health, energy levels, and mental
+                  positivity from when we first visited to now is truly
+                  remarkable-nothing short of a complete transformation.
+                </p>
+                <p class="text-sm leading-tight">
+                  Because of your treatment, his outlook on life has become much
+                  more positive, and his overall well-being has improved
+                  significantly. What stands out even more is your patience and
+                  understanding. For nearly 6-8 months, he was not fully ready
+                  to follow the process, yet you handled him with such calmness
+                  and compassion.
+                </p>
+                <p class="text-sm leading-tight">
+                  On a personal note, I have also experienced a profound change
+                  within myself. My sense of Titiksha (forbearance), positivity
+                  towards life, confidence, and ability to introspect and make
+                  courageous decisions have all grown tremendously after
+                  consulting you.
+                </p>
+                <p class="text-sm leading-tight">
+                  Thank you once again, Doctor, for your dedication, patience,
+                  and the positive transformation you have brought into both our
+                  lives.
+                  <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                    "
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
