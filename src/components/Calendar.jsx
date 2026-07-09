@@ -74,7 +74,16 @@ const Calendar = () => {
         isThirdSaturday = day === 19;
         isThirdSunday = day === 20;
       }
-      const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday;
+
+      let isFourthDay = false;
+      if (month == 6) {
+        isThirdFriday = day === 18;
+        isThirdSaturday = day === 19;
+        isThirdSunday = day === 20;
+        isFourthDay = day === 21;
+      }
+      const isSpecialDay =
+        isThirdFriday || isThirdSaturday || isThirdSunday || isFourthDay;
 
       days.push(
         <div
