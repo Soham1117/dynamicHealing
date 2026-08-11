@@ -82,8 +82,13 @@ const Calendar = () => {
         isThirdSunday = day === 20;
         isFourthDay = day === 21;
       }
+      const isAugust24ThisMonth = year === 2026 && month === 7 && day === 24;
       const isSpecialDay =
-        isThirdFriday || isThirdSaturday || isThirdSunday || isFourthDay;
+        isThirdFriday ||
+        isThirdSaturday ||
+        isThirdSunday ||
+        isFourthDay ||
+        isAugust24ThisMonth;
 
       days.push(
         <div
