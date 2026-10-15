@@ -4,7 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import Dropdown from "./dropDown";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import graphic from "../assets/vr10.jpg";
 
