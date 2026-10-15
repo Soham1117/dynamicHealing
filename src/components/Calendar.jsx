@@ -68,6 +68,7 @@ const Calendar = () => {
       let isThirdFriday = day === thirdFriday.getDate();
       let isThirdSaturday = day === weekend.saturday.getDate();
       let isThirdSunday = day === weekend.sunday.getDate();
+      let isThirdMonday = false;
 
 if (month == 3) {
         isThirdFriday = day === 18;
@@ -83,9 +84,10 @@ if (month == 3) {
         isThirdFriday = day === 22;
         isThirdSaturday = day === 23;
         isThirdSunday = day === 24;
+        isThirdMonday = day === 25;
       }
       const isAugust24ThisMonth = year === 2026 && month === 7 && day === 24;
-      const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday || isAugust24ThisMonth;
+      const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday || isThirdMonday || isAugust24ThisMonth;
 
       days.push(
         <div
