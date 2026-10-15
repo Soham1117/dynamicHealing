@@ -74,6 +74,11 @@ const Calendar = () => {
         isThirdSaturday = day === 19;
         isThirdSunday = day === 20;
       }
+      if (month == 9) {
+        isThirdFriday = day === 22;
+        isThirdSaturday = day === 23;
+        isThirdSunday = day === 24;
+      }
       const isSpecialDay = isThirdFriday || isThirdSaturday || isThirdSunday;
 
       days.push(
